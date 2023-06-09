@@ -8,7 +8,7 @@
 
 <meta name="author" content="Group 6">
 
-<title>VAA-Project-G6 - Project Proposal</title>
+<title>VAA-Project-G6 - Project Proposal: Visual Analytics for Identifying Illegal Fishing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,14 +105,31 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">1. Motivation:</a></li>
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">2. Problem Statement:</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">3. Methodology:</a></li>
+  <li><a href="#evaluation-metrics" id="toc-evaluation-metrics" class="nav-link" data-scroll-target="#evaluation-metrics">4. <strong>Evaluation Metrics</strong></a>
+  <ul class="collapse">
+  <li><a href="#package-used" id="toc-package-used" class="nav-link" data-scroll-target="#package-used">Package Used</a></li>
+  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a></li>
+  <li><a href="#handling-missing-data" id="toc-handling-missing-data" class="nav-link" data-scroll-target="#handling-missing-data"><strong>Handling Missing Data</strong></a></li>
+  </ul></li>
+  <li><a href="#limitations-and-challenges" id="toc-limitations-and-challenges" class="nav-link" data-scroll-target="#limitations-and-challenges"><strong>5. Limitations and Challenges</strong></a></li>
+  <li><a href="#project-timeline" id="toc-project-timeline" class="nav-link" data-scroll-target="#project-timeline"><strong>6. Project Timeline</strong></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project Proposal</h1>
+<h1 class="title">Project Proposal: Visual Analytics for Identifying Illegal Fishing</h1>
 </div>
 
 
@@ -133,8 +150,130 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="motivation" class="level1">
+<h1>1. Motivation:</h1>
+<p>The global issue of illegal, unreported, and unregulated (IUU) fishing poses a significant threat to marine ecosystems and sustainable fishing practices. Through this project, we aim to leverage visual analytics techniques to analyze trade data and identify companies engaged in illegal fishing. By providing comprehensive insights and tools to detect patterns, anomalies, and business relationships, we can shed light to take effective measures against IUU fishing and protect marine species.&nbsp;</p>
+</section>
+<section id="problem-statement" class="level1">
+<h1>2. Problem Statement:</h1>
+<p>The main challenges addressed by this project are:</p>
+<ul>
+<li><p><strong>Visualizing Patterns:</strong> By evaluating patterns and interactions among business entities over time using a visual analytics approach, we will seek to identify companies that have shut down due to illegal fishing but started to resume the illegal operations.</p></li>
+<li><p><strong>Discovering new patterns and anomalies:</strong> By integrating reliable links from the 12 groups of link suggestions into the knowledge graph, we need to identify new patterns and anomalies that may arise, indicating previously hidden connections or illegal fishing activities.</p></li>
+<li><p><strong>Identifying companies engaged in illegal fishing:</strong> Utilizing visualizations, we must identify companies exhibiting suspicious trade patterns and confidently conclude their involvement in illegal fishing.</p></li>
+</ul>
+</section>
+<section id="section" class="level1">
+<h1></h1>
+</section>
+<section id="methodology" class="level1">
+<h1>3. Methodology:</h1>
+<p>Our approach to solving the aforementioned problems consists of the following steps:</p>
+<ol type="1">
+<li><p><strong>Data Preprocessing</strong>: Before any analysis, we’ll clean the data, handle missing values, and prepare it for the subsequent steps.</p></li>
+<li><p><strong>Exploratory Data Analysis (EDA)</strong>: In this stage, we will conduct a preliminary investigation of the data to better understand its structure, uncover any interesting relationships, and identify any patterns or anomalies.</p></li>
+<li><p><strong>Visual Analytics</strong>: We will employ various visualization tools to illustrate temporal patterns and interactions between entities in the knowledge graph. We will use graphs, charts, and network diagrams to present the data visually, aiming to identify trends and irregularities indicative of illegal activities.</p></li>
+<li><p><strong>Link Evaluation and Integration</strong>: We will evaluate and integrate the suggested links into the knowledge graph. The integration of these links may reveal new patterns and connections that could suggest IUU fishing activities.</p></li>
+<li><p><strong>Pattern Recognition and Anomaly Detection</strong>: This stage involves the identification of entities that fit patterns consistent with illegal fishing activities. It also includes the detection of outliers or anomalies that could signify unreported or irregular activities.</p></li>
+<li><p><strong>Validation</strong>: To ensure the robustness of our approach, we will validate our findings by cross-referencing them with external data sources, if available. This will enhance the confidence in our final conclusions.</p></li>
+</ol>
+</section>
+<section id="evaluation-metrics" class="level1">
+<h1>4. <strong>Evaluation Metrics</strong></h1>
+<p>Our evaluation of this project will be based on both qualitative and quantitative metrics, keeping in mind the impact of data imputation and random sampling on our results:</p>
+<ol type="1">
+<li><p><strong>Effectiveness of Visualizations</strong>: We’ll use a variety of visualizations including violin plots, time series graphs, scatterplot matrices, word clouds, treemaps, network graphs, histograms, boxplots and etc. The effectiveness of these visualizations in clearly communicating the findings, trends, and insights will be a key evaluation metric.</p></li>
+<li><p><strong>Accuracy of Pattern Identification</strong>: This metric assesses how accurately our visual analytics approach can identify and categorize temporal patterns and business relationships. Given the imputation of data, we’ll also consider the degree of uncertainty in our pattern identifications.</p></li>
+<li><p><strong>Reliability of Link Suggestions</strong>: We’ll evaluate the reliability of the suggested links based on their coherence with the existing graph and their ability to unveil potential illegal activities. Again, we need to keep in mind that some of this data has been imputed.</p></li>
+<li><p><strong>Success in Anomaly Detection</strong>: Our success rate in identifying new patterns or anomalies upon integrating the reliable links will be evaluated, while considering the effect of data imputation and random sampling.</p></li>
+<li><p><strong>Precision in Identifying Companies</strong>: We’ll evaluate how accurately we can identify companies involved in IUU fishing based on our visualizations and pattern detection. We’ll also consider the uncertainty introduced by the use of imputed data in our conclusions.</p></li>
+<li><p><strong>Insightfulness of the Visualizations</strong>: The quality, clarity, and insightfulness of the visualizations will be key measures of our project’s success, bearing in mind the uncertainties due to data imputation.</p></li>
+</ol>
+<section id="package-used" class="level2">
+<h2 class="anchored" data-anchor-id="package-used">Package Used</h2>
+<p>Here’s a brief overview of what each package does:</p>
+<ol type="1">
+<li><p><strong>jsonlite:</strong> A robust and quick way to read/write JSON data in R.</p></li>
+<li><p><strong>tidygraph:</strong> A tidy interface to graph manipulations and provides many algorithms for graph structure.</p></li>
+<li><p><strong>ggraph:</strong> Extends the ggplot2 plotting system for layout and rendering of graph objects.</p></li>
+<li><p><strong>visNetwork:</strong> Used for network visualization using vis.js library.</p></li>
+<li><p><strong>tidyverse:</strong> A set of packages that work in harmony because they share common data representations and API design.</p></li>
+<li><p><strong>lubridate:</strong> Makes dealing with dates a little easier.</p></li>
+<li><p><strong>igraph:</strong> Network analysis and visualization.</p></li>
+<li><p><strong>stringr:</strong> Makes it easy to work with strings in R.</p></li>
+<li><p><strong>ggplot2:</strong> A system for ‘declaratively’ creating graphics.</p></li>
+<li><p><strong>GGally:</strong> An extension to ggplot2 for the creation of a matrix of charts.</p></li>
+<li><p><strong>ggforce:</strong> Accelerating ggplot2.</p></li>
+<li><p><strong>wordcloud:</strong> Functionality to create pretty word clouds.</p></li>
+<li><p><strong>treemap:</strong> Treemap visualization.</p></li>
+<li><p><strong>gridExtra:</strong> Provides functions in concert with the ‘grid’ package to perform layout of multiple grid graphics.</p></li>
+<li><p><strong>reshape2:</strong> Flexibly reshape data.</p></li>
+<li><p><strong>mice:</strong> Methods for dealing with missing data in R.</p></li>
+</ol>
+</section>
+<section id="the-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
+<p><strong>Nodes</strong> (34,576 rows, 3 columns):</p>
+<ul>
+<li><p><strong><code>id</code></strong>: Identifier for each entity (in this case, the names of companies involved in fishing).</p></li>
+<li><p><strong><code>shpcountry</code></strong>: Country from where the goods were shipped.</p></li>
+<li><p><strong><code>rcvcountry</code></strong>: Country where the goods were received.</p></li>
+</ul>
+<p><strong>Edges</strong> (5,464,378 rows, 7 columns):</p>
+<ul>
+<li><p><strong><code>source</code></strong>: Identifier of the entity (company) where the trade relationship originates.</p></li>
+<li><p><strong><code>target</code></strong>: Identifier of the entity (company) where the trade relationship ends.</p></li>
+<li><p><strong><code>hscode</code></strong>: The Harmonized System code, an international standard for classifying traded products.</p></li>
+<li><p><strong><code>arrivaldate</code></strong>: Date the goods arrived.</p></li>
+<li><p><strong><code>volumeteu</code></strong>: Volume of the goods in twenty-foot equivalent units.</p></li>
+<li><p><strong><code>weightkg</code></strong>: Weight of the goods in kilograms.</p></li>
+<li><p><strong><code>valueofgoods_omu</code></strong>: Value of goods in Oceanus Monetary Units (OMU).</p></li>
+</ul>
+</section>
+<section id="handling-missing-data" class="level2">
+<h2 class="anchored" data-anchor-id="handling-missing-data"><strong>Handling Missing Data</strong></h2>
+<p>Missing data is a common issue in real-world datasets, and our datasets are no exception. Appropriate handling of missing data is crucial to avoid introducing bias or inaccuracies in our analysis.</p>
+<p>In the <strong>Nodes</strong> dataset, we encounter missing values in the categorical variables <strong><code>shpcountry</code></strong> and <strong><code>rcvcountry</code></strong>. We choose to use <strong>Random Sampling Imputation</strong> to handle these missing values. This method involves taking random observations from the dataset and using these to replace the missing data. This technique assumes that the data are missing completely at random (MCAR).</p>
+<p>In the <strong>Edges</strong> dataset, missing data appears in several variables. For these, we employ <strong>Multiple Imputation</strong>. Multiple Imputation is a more sophisticated technique that creates plausible imputed values for the missing data based on the relationships observed in the data. This method provides a better estimate when the data is not missing at random, and it takes into account the uncertainty about the missing data by creating multiple datasets and analyzing each one separately.</p>
+<p>The rationale for these choices is to maximize the utilization of available data, and not to lose valuable information by just removing all the rows containing NA, which would drastically reduce our dataset size.</p>
+</section>
+</section>
+<section id="limitations-and-challenges" class="level1">
+<h1><strong>5. Limitations and Challenges</strong></h1>
+<ol type="1">
+<li><p><strong>Data Completeness and Accuracy</strong>: The datasets provided have missing data, which we filled in using random sampling and multiple imputation techniques. While these techniques are a pragmatic approach to handling missing data, they can introduce bias or inaccuracies into the results. We must remain aware that the patterns and anomalies detected might not entirely represent the reality due to these potential inaccuracies.</p></li>
+<li><p><strong>Complexity of Visual Analysis</strong>: While visual analytics provide a powerful means to identify patterns, outliers, and relationships, they can become complicated and less intuitive as the complexity of data increases. It may be challenging to design visualizations that effectively convey the complex relationships within the knowledge graph and trade data.</p></li>
+<li><p><strong>Scalability</strong>: The sheer volume of data and the high-dimensional nature of the data (multiple attributes per node) might pose challenges to computation and visualization. It could be a challenge to develop methods that scale efficiently to handle this volume of data while maintaining the clarity of the visualizations.</p></li>
+<li><p><strong>Evaluation of Link Suggestions</strong>: Evaluating the reliability of the suggested links for the knowledge graph requires the comparison of different scenarios, each with different sets of links added. This could become computationally demanding and may also lead to a combinatorial explosion of scenarios to evaluate.</p></li>
+<li><p><strong>Temporal Pattern Identification</strong>: Tracking companies’ activities over time to detect whether they are resuming illegal fishing operations under different names is challenging, as it involves not only recognizing patterns but also making connections across different entities and timescales.</p></li>
+<li><p><strong>Interpretation of Results</strong>: The results and visualizations need to be interpreted correctly to draw meaningful conclusions. There is always a risk of drawing false or misleading conclusions from the visualizations if not interpreted within the context of the data.</p></li>
+</ol>
+<p>Despite these challenges, we believe our methodological approach will allow us to gain valuable insights and make significant progress towards identifying companies possibly engaged in IUU fishing.</p>
+</section>
+<section id="project-timeline" class="level1">
+<h1><strong>6. Project Timeline</strong></h1>
+<ul>
+<li><p><strong>Project Initiation</strong>: Present date till 28th May 2023</p>
+<ul>
+<li>In this phase, we will delve deeper into understanding the problem, defining our objectives, and planning our strategy. This will also involve preparing the initial project proposal using Quarto and publishing the project website. We will aim to submit our project proposal on eLearn by 28th May 2023.</li>
+</ul></li>
+<li><p><strong>Project Execution and Completion</strong>: 29th May 2023 to 2nd July 2023</p>
+<ul>
+<li><p>During this phase, we will carry out the planned work. This includes data preprocessing, analysis, and visualization, along with the integration of various analytical techniques and tools. Concurrently, we will regularly update our project website with the progress and key milestones achieved.</p></li>
+<li><p>We will also create the final application, user guide, and project poster. By the end of this phase, the project website will be fully updated with all details including the final application, user guide, and poster. The deadline for completing this phase is 2nd July 2023.</p></li>
+</ul></li>
+<li><p><strong>Team Meetings</strong>:</p>
+<ul>
+<li><p>June 3rd, 2023: The team will meet to discuss the project proposal, brainstorm ideas, and outline the key components and approach for the project.</p></li>
+<li><p>June 9th, 2023: In this meeting, the team will dive into the project details, finalize the proposal, and solidify the methodology, visualization tools, and analytical techniques to be used.</p></li>
+<li><p>June 17th, 2023: The team will focus on working with visualization tools and methods in detail. This meeting will involve exploring different visualizations, selecting the most suitable ones, and refining the visual analytics approach.</p></li>
+<li><p>June 24th, 2023: This meeting will mark the finalization of the project, including a review of all deliverables, refining any remaining details, and preparing for the final submission and demo.</p></li>
+</ul></li>
+<li><p><strong>Virtual Team Meetings</strong>: Throughout the project timeline, the team will also schedule regular virtual meetings on Teams to discuss project-related questions, concerns, and progress updates. These virtual meetings will facilitate ongoing communication and collaboration, ensuring that everyone is aligned and on track.</p></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
