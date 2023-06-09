@@ -1,11 +1,65 @@
 ---
-title: "VAA-Project-G6"
+title: "Visual Analytics for Identifying Illegal Fishing"
+description: "Leveraging visual analytics to combat the global issue of illegal, unreported, and unregulated (IUU) fishing."
+editor: visual
+author: Group 6
+date: "`r Sys.Date()`"
+execute: 
+  warning: false
+  message: false
+format: html
 ---
 
-This is a Quarto website.
+# **Welcome to the Project**
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+The global issue of illegal, unreported, and unregulated (IUU) fishing poses a significant threat to marine ecosystems and sustainable fishing practices. Through this project, we aim to leverage visual analytics techniques to analyze trade data and identify companies engaged in illegal fishing. By providing comprehensive insights and tools to detect patterns, anomalies, and business relationships, we can shed light to take effective measures against IUU fishing and protect marine species.
 
-```{r}
-1 + 1
+# Problem Statement
+
+The main challenges addressed by this project are:
+
+## 1. Visualizing Patterns
+
+By evaluating patterns and interactions among business entities over time using a visual analytics approach, we will seek to identify companies that have shut down due to illegal fishing but started to resume the illegal operations.
+
+## 2. Discovering New Patterns and Anomalies
+
+By integrating reliable links from the 12 groups of link suggestions into the knowledge graph, we need to identify new patterns and anomalies that may arise, indicating previously hidden connections or illegal fishing activities.
+
+## 3. Identifying Companies Engaged in Illegal Fishing
+
+Utilizing visualizations, we must identify companies exhibiting suspicious trade patterns and confidently conclude their involvement in illegal fishing.
+
+# Project Stages
+
+-   Data Analysis: Using visual analytics techniques to analyze patterns and anomalies in the data.
+-   Knowledge Graph Construction: Integrating reliable links into the knowledge graph to identify hidden connections.
+-   Insights Generation: Drawing conclusions based on the analysis, identifying companies involved in IUU fishing.
+-   Reporting: Creating a comprehensive poster of our findings and suggesting actionable measures.
+
+Please check the respective sections of this site for more in-depth information and progress reports on each stage.
+
+## **Sample Interactive Map of Fishing Zones**
+
+```{r echo=FALSE}
+pacman::p_load(flexdashboard, shiny, dygraphs, DT, leaflet, plotly, magrittr)
+# This is a sample map with random locations
+leaflet() %>% addTiles() %>%
+  addMarkers(lng=-0.0910, lat=51.5045, popup="London") %>%
+  addMarkers(lng=-73.935242, lat=40.730610, popup="New York") %>%
+  addMarkers(lng=139.6917, lat=35.6895, popup="Tokyo")
+```
+
+# **Meet the Team**
+
+```{r echo=FALSE}
+# Add a DataTable for team members
+datatable(
+  data.frame(
+    Name = c("Yang Tianyi", "Cao Fei", "Linn ThawTar"),
+    Contact = c("tyyang.2022@mitb.smu.edu.sg", "feicao.2022@mitb.smu.edu.sg", "thawtarlinn.2022@mitb.smu.edu.sg") 
+  ), 
+  rownames = FALSE
+)
+
 ```

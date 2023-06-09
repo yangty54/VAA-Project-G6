@@ -2,9 +2,37 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "VAA-Project-G6",
+    "title": "Visual Analytics for Identifying Illegal Fishing",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "The global issue of illegal, unreported, and unregulated (IUU) fishing poses a significant threat to marine ecosystems and sustainable fishing practices. Through this project, we aim to leverage visual analytics techniques to analyze trade data and identify companies engaged in illegal fishing. By providing comprehensive insights and tools to detect patterns, anomalies, and business relationships, we can shed light to take effective measures against IUU fishing and protect marine species."
+  },
+  {
+    "objectID": "index.html#visualizing-patterns",
+    "href": "index.html#visualizing-patterns",
+    "title": "Visual Analytics for Identifying Illegal Fishing",
+    "section": "1. Visualizing Patterns",
+    "text": "1. Visualizing Patterns\nBy evaluating patterns and interactions among business entities over time using a visual analytics approach, we will seek to identify companies that have shut down due to illegal fishing but started to resume the illegal operations."
+  },
+  {
+    "objectID": "index.html#discovering-new-patterns-and-anomalies",
+    "href": "index.html#discovering-new-patterns-and-anomalies",
+    "title": "Visual Analytics for Identifying Illegal Fishing",
+    "section": "2. Discovering New Patterns and Anomalies",
+    "text": "2. Discovering New Patterns and Anomalies\nBy integrating reliable links from the 12 groups of link suggestions into the knowledge graph, we need to identify new patterns and anomalies that may arise, indicating previously hidden connections or illegal fishing activities."
+  },
+  {
+    "objectID": "index.html#identifying-companies-engaged-in-illegal-fishing",
+    "href": "index.html#identifying-companies-engaged-in-illegal-fishing",
+    "title": "Visual Analytics for Identifying Illegal Fishing",
+    "section": "3. Identifying Companies Engaged in Illegal Fishing",
+    "text": "3. Identifying Companies Engaged in Illegal Fishing\nUtilizing visualizations, we must identify companies exhibiting suspicious trade patterns and confidently conclude their involvement in illegal fishing."
+  },
+  {
+    "objectID": "index.html#sample-interactive-map-of-fishing-zones",
+    "href": "index.html#sample-interactive-map-of-fishing-zones",
+    "title": "Visual Analytics for Identifying Illegal Fishing",
+    "section": "Sample Interactive Map of Fishing Zones",
+    "text": "Sample Interactive Map of Fishing Zones"
   },
   {
     "objectID": "about.html",
