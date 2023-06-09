@@ -4,7 +4,10 @@ project:
 website:
   title: "VAA-Project-G6"
   navbar:
-    left:
+    left: 
+      - text: "Project Proposal"
+        href: "Proposal/Proposal.qmd"
+    right:
       - href: index.qmd
         text: Home
       - about.qmd
