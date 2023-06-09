@@ -32,7 +32,7 @@ Our approach to solving the aforementioned problems consists of the following st
 
 2.  **Exploratory Data Analysis (EDA)**: In this stage, we will conduct a preliminary investigation of the data to better understand its structure, uncover any interesting relationships, and identify any patterns or anomalies.
 
-3.  **Visual Analytics**: We will employ various visualization tools to illustrate temporal patterns and interactions between entities in the knowledge graph. We will use graphs, charts, and network diagrams to present the data visually, aiming to identify trends and irregularities indicative of illegal activities.
+3.  **Visual Analytics**: We will employ various visualization tools to illustrate temporal patterns and interactions between entities in the knowledge graph and use centrality measurements to discover the magnitude of interactions between entities.We will use graphs, charts, and network diagrams to present the data visually, aiming to identify trends and irregularities indicative of illegal activities.
 
 4.  **Link Evaluation and Integration**: We will evaluate and integrate the suggested links into the knowledge graph. The integration of these links may reveal new patterns and connections that could suggest IUU fishing activities.
 
@@ -55,6 +55,18 @@ Our evaluation of this project will be based on both qualitative and quantitativ
 5.  **Precision in Identifying Companies**: We'll evaluate how accurately we can identify companies involved in IUU fishing based on our visualizations and pattern detection. We'll also consider the uncertainty introduced by the use of imputed data in our conclusions.
 
 6.  **Insightfulness of the Visualizations**: The quality, clarity, and insightfulness of the visualizations will be key measures of our project's success, bearing in mind the uncertainties due to data imputation.
+
+# 5. **Tentative Visualizations to Use in Project**
+
+Through various types of visualization including scatterplots, time-series plots, histograms, and network graphs, we will unearth interesting patterns and trends in the data that can aid in the evaluation of the sets of predicted knowledge graph links.
+
+We will use time-series plot to show temporal trends and patterns in the goods shipment data, providing us with insights into the frequency and volume of trade between companies over the years. Scatterplots, particularly when variables are transformed via logarithmic scaling, allow us to detect strong relationships between variables like weight and volume of goods, which can indicate the nature and perhaps reliability of the links.
+
+Network graphs reveal the relationships between shipping and receiving countries, and when combined with community detection methods, can help identify clusters or communities within the graph. This can indicate the reliability of the links as strong clusters might suggest well-established and therefore reliable trade links.
+
+Histograms and boxplots provide insights into the distribution of various continuous variables, which can indirectly affect the reliability of the links. For example, links associated with unusually high or low volumes of goods might be less reliable than those within the normal range.
+
+While all of these visualizations provide valuable insights, it's important to interpret them together and in the context of our knowledge about the data and its domain. The "most reliable" sets for completing the graph would ideally be those that are consistently supported across multiple visualizations and align with our existing knowledge about the trade network**.**
 
 ## Package Used
 
@@ -128,7 +140,7 @@ In the **Edges** dataset, missing data appears in several variables. For these, 
 
 The rationale for these choices is to maximize the utilization of available data, and not to lose valuable information by just removing all the rows containing NA, which would drastically reduce our dataset size.
 
-# **5. Limitations and Challenges**
+## Limitations and Challenges
 
 1.  **Data Completeness and Accuracy**: The datasets provided have missing data, which we filled in using random sampling and multiple imputation techniques. While these techniques are a pragmatic approach to handling missing data, they can introduce bias or inaccuracies into the results. We must remain aware that the patterns and anomalies detected might not entirely represent the reality due to these potential inaccuracies.
 
@@ -144,7 +156,7 @@ The rationale for these choices is to maximize the utilization of available data
 
 Despite these challenges, we believe our methodological approach will allow us to gain valuable insights and make significant progress towards identifying companies possibly engaged in IUU fishing.
 
-# **6. Project Timeline**
+## Project Timeline
 
 -   **Project Initiation**: Present date till 28th May 2023
 

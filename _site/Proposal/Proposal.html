@@ -113,14 +113,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">2. Problem Statement:</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">3. Methodology:</a></li>
-  <li><a href="#evaluation-metrics" id="toc-evaluation-metrics" class="nav-link" data-scroll-target="#evaluation-metrics">4. <strong>Evaluation Metrics</strong></a>
+  <li><a href="#evaluation-metrics" id="toc-evaluation-metrics" class="nav-link" data-scroll-target="#evaluation-metrics">4. <strong>Evaluation Metrics</strong></a></li>
+  <li><a href="#tentative-visualizations-to-use-in-project" id="toc-tentative-visualizations-to-use-in-project" class="nav-link" data-scroll-target="#tentative-visualizations-to-use-in-project">5. <strong>Tentative Visualizations to Use in Project</strong></a>
   <ul class="collapse">
   <li><a href="#package-used" id="toc-package-used" class="nav-link" data-scroll-target="#package-used">Package Used</a></li>
   <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a></li>
   <li><a href="#handling-missing-data" id="toc-handling-missing-data" class="nav-link" data-scroll-target="#handling-missing-data"><strong>Handling Missing Data</strong></a></li>
+  <li><a href="#limitations-and-challenges" id="toc-limitations-and-challenges" class="nav-link" data-scroll-target="#limitations-and-challenges">Limitations and Challenges</a></li>
+  <li><a href="#project-timeline" id="toc-project-timeline" class="nav-link" data-scroll-target="#project-timeline">Project Timeline</a></li>
   </ul></li>
-  <li><a href="#limitations-and-challenges" id="toc-limitations-and-challenges" class="nav-link" data-scroll-target="#limitations-and-challenges"><strong>5. Limitations and Challenges</strong></a></li>
-  <li><a href="#project-timeline" id="toc-project-timeline" class="nav-link" data-scroll-target="#project-timeline"><strong>6. Project Timeline</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -172,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><p><strong>Data Preprocessing</strong>: Before any analysis, we’ll clean the data, handle missing values, and prepare it for the subsequent steps.</p></li>
 <li><p><strong>Exploratory Data Analysis (EDA)</strong>: In this stage, we will conduct a preliminary investigation of the data to better understand its structure, uncover any interesting relationships, and identify any patterns or anomalies.</p></li>
-<li><p><strong>Visual Analytics</strong>: We will employ various visualization tools to illustrate temporal patterns and interactions between entities in the knowledge graph. We will use graphs, charts, and network diagrams to present the data visually, aiming to identify trends and irregularities indicative of illegal activities.</p></li>
+<li><p><strong>Visual Analytics</strong>: We will employ various visualization tools to illustrate temporal patterns and interactions between entities in the knowledge graph and use centrality measurements to discover the magnitude of interactions between entities.We will use graphs, charts, and network diagrams to present the data visually, aiming to identify trends and irregularities indicative of illegal activities.</p></li>
 <li><p><strong>Link Evaluation and Integration</strong>: We will evaluate and integrate the suggested links into the knowledge graph. The integration of these links may reveal new patterns and connections that could suggest IUU fishing activities.</p></li>
 <li><p><strong>Pattern Recognition and Anomaly Detection</strong>: This stage involves the identification of entities that fit patterns consistent with illegal fishing activities. It also includes the detection of outliers or anomalies that could signify unreported or irregular activities.</p></li>
 <li><p><strong>Validation</strong>: To ensure the robustness of our approach, we will validate our findings by cross-referencing them with external data sources, if available. This will enhance the confidence in our final conclusions.</p></li>
@@ -189,6 +190,14 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Precision in Identifying Companies</strong>: We’ll evaluate how accurately we can identify companies involved in IUU fishing based on our visualizations and pattern detection. We’ll also consider the uncertainty introduced by the use of imputed data in our conclusions.</p></li>
 <li><p><strong>Insightfulness of the Visualizations</strong>: The quality, clarity, and insightfulness of the visualizations will be key measures of our project’s success, bearing in mind the uncertainties due to data imputation.</p></li>
 </ol>
+</section>
+<section id="tentative-visualizations-to-use-in-project" class="level1">
+<h1>5. <strong>Tentative Visualizations to Use in Project</strong></h1>
+<p>Through various types of visualization including scatterplots, time-series plots, histograms, and network graphs, we will unearth interesting patterns and trends in the data that can aid in the evaluation of the sets of predicted knowledge graph links.</p>
+<p>We will use time-series plot to show temporal trends and patterns in the goods shipment data, providing us with insights into the frequency and volume of trade between companies over the years. Scatterplots, particularly when variables are transformed via logarithmic scaling, allow us to detect strong relationships between variables like weight and volume of goods, which can indicate the nature and perhaps reliability of the links.</p>
+<p>Network graphs reveal the relationships between shipping and receiving countries, and when combined with community detection methods, can help identify clusters or communities within the graph. This can indicate the reliability of the links as strong clusters might suggest well-established and therefore reliable trade links.</p>
+<p>Histograms and boxplots provide insights into the distribution of various continuous variables, which can indirectly affect the reliability of the links. For example, links associated with unusually high or low volumes of goods might be less reliable than those within the normal range.</p>
+<p>While all of these visualizations provide valuable insights, it’s important to interpret them together and in the context of our knowledge about the data and its domain. The “most reliable” sets for completing the graph would ideally be those that are consistently supported across multiple visualizations and align with our existing knowledge about the trade network<strong>.</strong></p>
 <section id="package-used" class="level2">
 <h2 class="anchored" data-anchor-id="package-used">Package Used</h2>
 <p>Here’s a brief overview of what each package does:</p>
@@ -237,9 +246,8 @@ ul.task-list li input[type="checkbox"] {
 <p>In the <strong>Edges</strong> dataset, missing data appears in several variables. For these, we employ <strong>Multiple Imputation</strong>. Multiple Imputation is a more sophisticated technique that creates plausible imputed values for the missing data based on the relationships observed in the data. This method provides a better estimate when the data is not missing at random, and it takes into account the uncertainty about the missing data by creating multiple datasets and analyzing each one separately.</p>
 <p>The rationale for these choices is to maximize the utilization of available data, and not to lose valuable information by just removing all the rows containing NA, which would drastically reduce our dataset size.</p>
 </section>
-</section>
-<section id="limitations-and-challenges" class="level1">
-<h1><strong>5. Limitations and Challenges</strong></h1>
+<section id="limitations-and-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-challenges">Limitations and Challenges</h2>
 <ol type="1">
 <li><p><strong>Data Completeness and Accuracy</strong>: The datasets provided have missing data, which we filled in using random sampling and multiple imputation techniques. While these techniques are a pragmatic approach to handling missing data, they can introduce bias or inaccuracies into the results. We must remain aware that the patterns and anomalies detected might not entirely represent the reality due to these potential inaccuracies.</p></li>
 <li><p><strong>Complexity of Visual Analysis</strong>: While visual analytics provide a powerful means to identify patterns, outliers, and relationships, they can become complicated and less intuitive as the complexity of data increases. It may be challenging to design visualizations that effectively convey the complex relationships within the knowledge graph and trade data.</p></li>
@@ -250,8 +258,8 @@ ul.task-list li input[type="checkbox"] {
 </ol>
 <p>Despite these challenges, we believe our methodological approach will allow us to gain valuable insights and make significant progress towards identifying companies possibly engaged in IUU fishing.</p>
 </section>
-<section id="project-timeline" class="level1">
-<h1><strong>6. Project Timeline</strong></h1>
+<section id="project-timeline" class="level2">
+<h2 class="anchored" data-anchor-id="project-timeline">Project Timeline</h2>
 <ul>
 <li><p><strong>Project Initiation</strong>: Present date till 28th May 2023</p>
 <ul>
@@ -273,6 +281,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
