@@ -1,5 +1,6 @@
 ---
-title: "Project Proposal: Visual Analytics for Identifying Illegal Fishing"
+title: "Project Proposal"
+subtitle: "Visual Analytics for Identifying Illegal Fishing"
 editor: visual
 author: Group 6
 execute: 

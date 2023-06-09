@@ -44,42 +44,42 @@
   {
     "objectID": "Proposal/Proposal.html",
     "href": "Proposal/Proposal.html",
-    "title": "Project Proposal: Visual Analytics for Identifying Illegal Fishing",
+    "title": "Project Proposal",
     "section": "",
     "text": "The global issue of illegal, unreported, and unregulated (IUU) fishing poses a significant threat to marine ecosystems and sustainable fishing practices. Through this project, we aim to leverage visual analytics techniques to analyze trade data and identify companies engaged in illegal fishing. By providing comprehensive insights and tools to detect patterns, anomalies, and business relationships, we can shed light to take effective measures against IUU fishing and protect marine species."
   },
   {
     "objectID": "Proposal/Proposal.html#package-used",
     "href": "Proposal/Proposal.html#package-used",
-    "title": "Project Proposal: Visual Analytics for Identifying Illegal Fishing",
+    "title": "Project Proposal",
     "section": "Package Used",
     "text": "Package Used\nHere’s a brief overview of what each package does:\n\njsonlite: A robust and quick way to read/write JSON data in R.\ntidygraph: A tidy interface to graph manipulations and provides many algorithms for graph structure.\nggraph: Extends the ggplot2 plotting system for layout and rendering of graph objects.\nvisNetwork: Used for network visualization using vis.js library.\ntidyverse: A set of packages that work in harmony because they share common data representations and API design.\nlubridate: Makes dealing with dates a little easier.\nigraph: Network analysis and visualization.\nstringr: Makes it easy to work with strings in R.\nggplot2: A system for ‘declaratively’ creating graphics.\nGGally: An extension to ggplot2 for the creation of a matrix of charts.\nggforce: Accelerating ggplot2.\nwordcloud: Functionality to create pretty word clouds.\ntreemap: Treemap visualization.\ngridExtra: Provides functions in concert with the ‘grid’ package to perform layout of multiple grid graphics.\nreshape2: Flexibly reshape data.\nmice: Methods for dealing with missing data in R."
   },
   {
     "objectID": "Proposal/Proposal.html#the-data",
     "href": "Proposal/Proposal.html#the-data",
-    "title": "Project Proposal: Visual Analytics for Identifying Illegal Fishing",
+    "title": "Project Proposal",
     "section": "The Data",
     "text": "The Data\nNodes (34,576 rows, 3 columns):\n\nid: Identifier for each entity (in this case, the names of companies involved in fishing).\nshpcountry: Country from where the goods were shipped.\nrcvcountry: Country where the goods were received.\n\nEdges (5,464,378 rows, 7 columns):\n\nsource: Identifier of the entity (company) where the trade relationship originates.\ntarget: Identifier of the entity (company) where the trade relationship ends.\nhscode: The Harmonized System code, an international standard for classifying traded products.\narrivaldate: Date the goods arrived.\nvolumeteu: Volume of the goods in twenty-foot equivalent units.\nweightkg: Weight of the goods in kilograms.\nvalueofgoods_omu: Value of goods in Oceanus Monetary Units (OMU)."
   },
   {
     "objectID": "Proposal/Proposal.html#handling-missing-data",
     "href": "Proposal/Proposal.html#handling-missing-data",
-    "title": "Project Proposal: Visual Analytics for Identifying Illegal Fishing",
+    "title": "Project Proposal",
     "section": "Handling Missing Data",
     "text": "Handling Missing Data\nMissing data is a common issue in real-world datasets, and our datasets are no exception. Appropriate handling of missing data is crucial to avoid introducing bias or inaccuracies in our analysis.\nIn the Nodes dataset, we encounter missing values in the categorical variables shpcountry and rcvcountry. We choose to use Random Sampling Imputation to handle these missing values. This method involves taking random observations from the dataset and using these to replace the missing data. This technique assumes that the data are missing completely at random (MCAR).\nIn the Edges dataset, missing data appears in several variables. For these, we employ Multiple Imputation. Multiple Imputation is a more sophisticated technique that creates plausible imputed values for the missing data based on the relationships observed in the data. This method provides a better estimate when the data is not missing at random, and it takes into account the uncertainty about the missing data by creating multiple datasets and analyzing each one separately.\nThe rationale for these choices is to maximize the utilization of available data, and not to lose valuable information by just removing all the rows containing NA, which would drastically reduce our dataset size."
   },
   {
     "objectID": "Proposal/Proposal.html#limitations-and-challenges",
     "href": "Proposal/Proposal.html#limitations-and-challenges",
-    "title": "Project Proposal: Visual Analytics for Identifying Illegal Fishing",
+    "title": "Project Proposal",
     "section": "Limitations and Challenges",
     "text": "Limitations and Challenges\n\nData Completeness and Accuracy: The datasets provided have missing data, which we filled in using random sampling and multiple imputation techniques. While these techniques are a pragmatic approach to handling missing data, they can introduce bias or inaccuracies into the results. We must remain aware that the patterns and anomalies detected might not entirely represent the reality due to these potential inaccuracies.\nComplexity of Visual Analysis: While visual analytics provide a powerful means to identify patterns, outliers, and relationships, they can become complicated and less intuitive as the complexity of data increases. It may be challenging to design visualizations that effectively convey the complex relationships within the knowledge graph and trade data.\nScalability: The sheer volume of data and the high-dimensional nature of the data (multiple attributes per node) might pose challenges to computation and visualization. It could be a challenge to develop methods that scale efficiently to handle this volume of data while maintaining the clarity of the visualizations.\nEvaluation of Link Suggestions: Evaluating the reliability of the suggested links for the knowledge graph requires the comparison of different scenarios, each with different sets of links added. This could become computationally demanding and may also lead to a combinatorial explosion of scenarios to evaluate.\nTemporal Pattern Identification: Tracking companies’ activities over time to detect whether they are resuming illegal fishing operations under different names is challenging, as it involves not only recognizing patterns but also making connections across different entities and timescales.\nInterpretation of Results: The results and visualizations need to be interpreted correctly to draw meaningful conclusions. There is always a risk of drawing false or misleading conclusions from the visualizations if not interpreted within the context of the data.\n\nDespite these challenges, we believe our methodological approach will allow us to gain valuable insights and make significant progress towards identifying companies possibly engaged in IUU fishing."
   },
   {
     "objectID": "Proposal/Proposal.html#project-timeline",
     "href": "Proposal/Proposal.html#project-timeline",
-    "title": "Project Proposal: Visual Analytics for Identifying Illegal Fishing",
+    "title": "Project Proposal",
     "section": "Project Timeline",
     "text": "Project Timeline\n\nProject Initiation: Present date till 28th May 2023\n\nIn this phase, we will delve deeper into understanding the problem, defining our objectives, and planning our strategy. This will also involve preparing the initial project proposal using Quarto and publishing the project website. We will aim to submit our project proposal on eLearn by 28th May 2023.\n\nProject Execution and Completion: 29th May 2023 to 2nd July 2023\n\nDuring this phase, we will carry out the planned work. This includes data preprocessing, analysis, and visualization, along with the integration of various analytical techniques and tools. Concurrently, we will regularly update our project website with the progress and key milestones achieved.\nWe will also create the final application, user guide, and project poster. By the end of this phase, the project website will be fully updated with all details including the final application, user guide, and poster. The deadline for completing this phase is 2nd July 2023.\n\nTeam Meetings:\n\nJune 3rd, 2023: The team will meet to discuss the project proposal, brainstorm ideas, and outline the key components and approach for the project.\nJune 9th, 2023: In this meeting, the team will dive into the project details, finalize the proposal, and solidify the methodology, visualization tools, and analytical techniques to be used.\nJune 17th, 2023: The team will focus on working with visualization tools and methods in detail. This meeting will involve exploring different visualizations, selecting the most suitable ones, and refining the visual analytics approach.\nJune 24th, 2023: This meeting will mark the finalization of the project, including a review of all deliverables, refining any remaining details, and preparing for the final submission and demo.\n\nVirtual Team Meetings: Throughout the project timeline, the team will also schedule regular virtual meetings on Teams to discuss project-related questions, concerns, and progress updates. These virtual meetings will facilitate ongoing communication and collaboration, ensuring that everyone is aligned and on track."
   }
