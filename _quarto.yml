@@ -17,5 +17,6 @@ format:
     theme: cyborg
     css: styles.css
     toc: true
+    layout: _layout.html
 
 editor: visual

@@ -1,1 +1,25 @@
-/* css styles */
+/* styles.css */
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #f00;
+}
+
+/* Main container styles */
+.container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Additional styles */
+/* Add your own custom CSS styles here */
