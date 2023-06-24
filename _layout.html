@@ -2,80 +2,16 @@
 <html>
 <head>
   <title>{{ title }}</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Custom CSS for the sidebar */
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 240px;
-      height: 100%;
-      background-color: #f8f9fa;
-      transition: left 0.3s ease-in-out;
-      z-index: 900;
-    }
-
-    .sidebar-toggle {
-      position: fixed;
-      top: 50%;
-      left: 0;
-      transform: translate(-100%, -50%);
-      z-index: 1000;
-      padding: 6px;
-      background-color: #343a40;
-      color: #fff;
-      cursor: pointer;
-    }
-
-    .sidebar-toggle span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      margin-bottom: 4px;
-      background-color: #fff;
-    }
-
-    .sidebar-toggle:checked + .sidebar {
-      left: 0;
-    }
-
-    .sidebar-toggle:checked + .sidebar-toggle-label {
-      left: 240px;
-    }
-
-    .sidebar-toggle-label {
-      position: fixed;
-      top: 50%;
-      left: -30px;
-      transform: translateY(-50%);
-      width: 30px;
-      height: 30px;
-      background-color: #343a40;
-      z-index: 1000;
-      cursor: pointer;
+    .site-title {
+      font-size: 36px; /* Adjust the font size as needed */
+      /* Add any other styling properties here */
     }
   </style>
 </head>
 <body>
-  <!-- Sidebar Toggle Input -->
-  <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
-  <!-- Sidebar Toggle Label -->
-  <label for="sidebar-toggle" class="sidebar-toggle-label">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <!-- Sidebar content goes here -->
-    {{ sidebar }}
-  </div>
-
-  <!-- Main Content -->
-  <div class="container mt-4">
-    {{ content }}
-  </div>
+  <!-- Rest of your layout code -->
 </body>
 </html>

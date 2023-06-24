@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -102,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
@@ -154,12 +154,6 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#welcome-to-the-project" id="toc-welcome-to-the-project" class="nav-link active" data-scroll-target="#welcome-to-the-project"><strong>Welcome to the Project</strong></a></li>
-  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">Problem Statement</a>
-  <ul class="collapse">
-  <li><a href="#visualizing-patterns" id="toc-visualizing-patterns" class="nav-link" data-scroll-target="#visualizing-patterns">1. Visualizing Patterns</a></li>
-  <li><a href="#discovering-new-patterns-and-anomalies" id="toc-discovering-new-patterns-and-anomalies" class="nav-link" data-scroll-target="#discovering-new-patterns-and-anomalies">2. Discovering New Patterns and Anomalies</a></li>
-  <li><a href="#identifying-companies-engaged-in-illegal-fishing" id="toc-identifying-companies-engaged-in-illegal-fishing" class="nav-link" data-scroll-target="#identifying-companies-engaged-in-illegal-fishing">3. Identifying Companies Engaged in Illegal Fishing</a></li>
-  </ul></li>
   <li><a href="#project-stages" id="toc-project-stages" class="nav-link" data-scroll-target="#project-stages">Project Stages</a>
   <ul class="collapse">
   <li><a href="#sample-interactive-map-of-fishing-zones" id="toc-sample-interactive-map-of-fishing-zones" class="nav-link" data-scroll-target="#sample-interactive-map-of-fishing-zones"><strong>Sample Interactive Map of Fishing Zones</strong></a></li>
@@ -169,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -209,22 +203,6 @@ ul.task-list li input[type="checkbox"] {
 <h1><strong>Welcome to the Project</strong></h1>
 <p>The global issue of illegal, unreported, and unregulated (IUU) fishing poses a significant threat to marine ecosystems and sustainable fishing practices. Through this project, we aim to leverage visual analytics techniques to analyze trade data and identify companies engaged in illegal fishing. By providing comprehensive insights and tools to detect patterns, anomalies, and business relationships, we can shed light to take effective measures against IUU fishing and protect marine species.</p>
 </section>
-<section id="problem-statement" class="level1">
-<h1>Problem Statement</h1>
-<p>The main challenges addressed by this project are:</p>
-<section id="visualizing-patterns" class="level2">
-<h2 class="anchored" data-anchor-id="visualizing-patterns">1. Visualizing Patterns</h2>
-<p>By evaluating patterns and interactions among business entities over time using a visual analytics approach, we will seek to identify companies that have shut down due to illegal fishing but started to resume the illegal operations.</p>
-</section>
-<section id="discovering-new-patterns-and-anomalies" class="level2">
-<h2 class="anchored" data-anchor-id="discovering-new-patterns-and-anomalies">2. Discovering New Patterns and Anomalies</h2>
-<p>By integrating reliable links from the 12 groups of link suggestions into the knowledge graph, we need to identify new patterns and anomalies that may arise, indicating previously hidden connections or illegal fishing activities.</p>
-</section>
-<section id="identifying-companies-engaged-in-illegal-fishing" class="level2">
-<h2 class="anchored" data-anchor-id="identifying-companies-engaged-in-illegal-fishing">3. Identifying Companies Engaged in Illegal Fishing</h2>
-<p>Utilizing visualizations, we must identify companies exhibiting suspicious trade patterns and confidently conclude their involvement in illegal fishing.</p>
-</section>
-</section>
 <section id="project-stages" class="level1">
 <h1>Project Stages</h1>
 <ul>
@@ -238,8 +216,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="sample-interactive-map-of-fishing-zones"><strong>Sample Interactive Map of Fishing Zones</strong></h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-59d2f8912b90dd9cc292" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-59d2f8912b90dd9cc292">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.5045,-0.091,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"London",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[40.73061,-73.935242,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"New York",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[35.6895,139.6917,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Tokyo",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[35.6895,51.5045],"lng":[-73.935242,139.6917]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-797836588568d143dfe6" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-797836588568d143dfe6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[51.5045,-0.091,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"London",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[40.73061,-73.935242,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"New York",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMarkers","args":[35.6895,139.6917,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Tokyo",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[35.6895,51.5045],"lng":[-73.935242,139.6917]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -249,8 +227,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output-display">
 
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-c760012badfd96e85315" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-c760012badfd96e85315">{"x":{"filter":"none","vertical":false,"data":[["Yang Tianyi","Cao Fei","Linn ThawTar"],["tyyang.2022@mitb.smu.edu.sg","feicao.2022@mitb.smu.edu.sg","thawtarlinn.2022@mitb.smu.edu.sg"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Name<\/th>\n      <th>Contact<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-bd21e87719f13075f139" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-bd21e87719f13075f139">{"x":{"filter":"none","vertical":false,"data":[["Yang Tianyi","Cao Fei","Linn ThawTar"],["tyyang.2022@mitb.smu.edu.sg","feicao.2022@mitb.smu.edu.sg","thawtarlinn.2022@mitb.smu.edu.sg"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Name<\/th>\n      <th>Contact<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[],"order":[],"autoWidth":false,"orderClasses":false},"selection":{"mode":"multiple","selected":null,"target":"row","selectable":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -492,6 +470,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">ISSS608 VAA Project</div>
+  </div>
+</footer>
 
 
 

@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
@@ -135,7 +135,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">1. Motivation:</a></li>
-  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">2. Problem Statement:</a></li>
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">2. Problem Statement</a>
+  <ul class="collapse">
+  <li><a href="#visualizing-demographics" id="toc-visualizing-demographics" class="nav-link" data-scroll-target="#visualizing-demographics">Visualizing Demographics</a></li>
+  <li><a href="#discovering-new-patterns-and-anomalies" id="toc-discovering-new-patterns-and-anomalies" class="nav-link" data-scroll-target="#discovering-new-patterns-and-anomalies">Discovering New Patterns and Anomalies</a></li>
+  <li><a href="#identifying-companies-engaged-in-illegal-fishing" id="toc-identifying-companies-engaged-in-illegal-fishing" class="nav-link" data-scroll-target="#identifying-companies-engaged-in-illegal-fishing">Identifying Companies Engaged in Illegal Fishing</a></li>
+  </ul></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">3. Methodology:</a></li>
   <li><a href="#evaluation-metrics" id="toc-evaluation-metrics" class="nav-link" data-scroll-target="#evaluation-metrics">4. <strong>Evaluation Metrics</strong></a></li>
@@ -151,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -182,13 +187,20 @@ ul.task-list li input[type="checkbox"] {
 <p>The global issue of illegal, unreported, and unregulated (IUU) fishing poses a significant threat to marine ecosystems and sustainable fishing practices. Through this project, we aim to leverage visual analytics techniques to analyze trade data and identify companies engaged in illegal fishing. By providing comprehensive insights and tools to detect patterns, anomalies, and business relationships, we can shed light to take effective measures against IUU fishing and protect marine species.&nbsp;</p>
 </section>
 <section id="problem-statement" class="level1">
-<h1>2. Problem Statement:</h1>
+<h1>2. Problem Statement</h1>
 <p>The main challenges addressed by this project are:</p>
-<ul>
-<li><p><strong>Visualizing Patterns:</strong> By evaluating patterns and interactions among business entities over time using a visual analytics approach, we will seek to identify companies that have shut down due to illegal fishing but started to resume the illegal operations.</p></li>
-<li><p><strong>Discovering new patterns and anomalies:</strong> By integrating reliable links from the 12 groups of link suggestions into the knowledge graph, we need to identify new patterns and anomalies that may arise, indicating previously hidden connections or illegal fishing activities.</p></li>
-<li><p><strong>Identifying companies engaged in illegal fishing:</strong> Utilizing visualizations, we must identify companies exhibiting suspicious trade patterns and confidently conclude their involvement in illegal fishing.</p></li>
-</ul>
+<section id="visualizing-demographics" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-demographics">Visualizing Demographics</h2>
+<p>By evaluating and visualizing basic patterns and interactions among business entities over time using a visual analytics approach, we will seek to identify companies that have shut down due to illegal fishing but started to resume the illegal operations.</p>
+</section>
+<section id="discovering-new-patterns-and-anomalies" class="level2">
+<h2 class="anchored" data-anchor-id="discovering-new-patterns-and-anomalies">Discovering New Patterns and Anomalies</h2>
+<p>By integrating reliable links from the 12 groups of link suggestions into the knowledge graph, we need to identify new patterns and anomalies that may arise, indicating previously hidden connections or illegal fishing activities.</p>
+</section>
+<section id="identifying-companies-engaged-in-illegal-fishing" class="level2">
+<h2 class="anchored" data-anchor-id="identifying-companies-engaged-in-illegal-fishing">Identifying Companies Engaged in Illegal Fishing</h2>
+<p>Utilizing visualizations, we must identify companies exhibiting suspicious trade patterns and confidently conclude their involvement in illegal fishing.</p>
+</section>
 </section>
 <section id="section" class="level1">
 <h1></h1>
@@ -545,6 +557,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">ISSS608 VAA Project</div>
+  </div>
+</footer>
 
 
 

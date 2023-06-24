@@ -15,22 +15,6 @@ layout: _layout.html
 
 The global issue of illegal, unreported, and unregulated (IUU) fishing poses a significant threat to marine ecosystems and sustainable fishing practices. Through this project, we aim to leverage visual analytics techniques to analyze trade data and identify companies engaged in illegal fishing. By providing comprehensive insights and tools to detect patterns, anomalies, and business relationships, we can shed light to take effective measures against IUU fishing and protect marine species.
 
-# Problem Statement
-
-The main challenges addressed by this project are:
-
-## 1. Visualizing Patterns
-
-By evaluating patterns and interactions among business entities over time using a visual analytics approach, we will seek to identify companies that have shut down due to illegal fishing but started to resume the illegal operations.
-
-## 2. Discovering New Patterns and Anomalies
-
-By integrating reliable links from the 12 groups of link suggestions into the knowledge graph, we need to identify new patterns and anomalies that may arise, indicating previously hidden connections or illegal fishing activities.
-
-## 3. Identifying Companies Engaged in Illegal Fishing
-
-Utilizing visualizations, we must identify companies exhibiting suspicious trade patterns and confidently conclude their involvement in illegal fishing.
-
 # Project Stages
 
 -   Data Analysis: Using visual analytics techniques to analyze patterns and anomalies in the data.

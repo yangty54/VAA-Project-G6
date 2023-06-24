@@ -2,8 +2,12 @@ project:
   type: website
 
 website:
+  page-navigation: false
   title: "VAA-Project-G6"
-      
+  
+  page-footer:
+    right: "ISSS608 VAA Project"
+  
   sidebar:
     logo: "fishing.jpg"
     pinned: true
@@ -20,8 +24,10 @@ website:
       - icon: github
         href: https://github.com/yangty54/VAA-Project-G6
         text: "GitHub Repository"
+    
     search: true
     collapse-level: 1
+    
     contents: 
       - text: Home
         href: index.qmd
@@ -36,9 +42,11 @@ website:
 
 format:
   html:
-    theme: cyborg
+    theme: Journal
     css: styles.css
     toc: true
     layout: _layout.html
+    code-overflow: wrap
+    page-layout: full
 
 editor: visual
