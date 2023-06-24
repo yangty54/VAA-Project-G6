@@ -3,18 +3,29 @@ project:
 
 website:
   title: "VAA-Project-G6"
-
       
   sidebar:
     logo: "fishing.jpg"
     pinned: true
     align: center
+    tools: 
+      - icon: "server"
+        href: https://vast-challenge.github.io/2023/MC2.html
+        text: "Data Source"
+      
+      - icon: "display"
+        href: https://github.com/yangty54
+        text: "R Shiny Application"
+      
+      - icon: github
+        href: https://github.com/yangty54/VAA-Project-G6
+        text: "GitHub Repository"
     search: true
     collapse-level: 1
     contents: 
       - text: Home
         href: index.qmd
-      - text: "Project Proposal"
+      - text: "Proposal"
         href: "Proposal/Proposal.qmd"
       - text: User Guide
         href: 
@@ -22,7 +33,6 @@ website:
         href: 
       - text: Poster
         href:
-
 
 format:
   html:
