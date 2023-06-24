@@ -3,14 +3,26 @@ project:
 
 website:
   title: "VAA-Project-G6"
-  navbar:
-    left: 
+
+      
+  sidebar:
+    logo: "fishing.jpg"
+    pinned: true
+    align: center
+    search: true
+    collapse-level: 1
+    contents: 
+      - text: Home
+        href: index.qmd
       - text: "Project Proposal"
         href: "Proposal/Proposal.qmd"
-    right:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: User Guide
+        href: 
+      - text: Application
+        href: 
+      - text: Poster
+        href:
+
 
 format:
   html:
