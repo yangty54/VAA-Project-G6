@@ -1,0 +1,17 @@
+---
+title: "Application"
+editor: visual
+author: Group 6
+execute: 
+  warning: false
+  message: false
+format: html
+---
+
+![](images/275581688311668_.pic.jpg)
+
+-   The Illegal Fishing Analysis application is available at: <https://yangty.shinyapps.io/VAA-ShinyAPP-G6/>
+
+-   Project GitHub Repository: <https://github.com/yangty54>
+
+-   Data Source: [https://github.com/vast-challenge/2023-data/raw/800887b8fcadad4ac526d29983948277a6e423e2/MC2.zip?raw=true](https://www.google.com/url?q=https://github.com/vast-challenge/2023-data/raw/800887b8fcadad4ac526d29983948277a6e423e2/MC2.zip?raw%3Dtrue&sa=D&source=editors&ust=1688303636320993&usg=AOvVaw3bi7rlSdqQehOeenBc8tLt)

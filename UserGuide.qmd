@@ -1,0 +1,161 @@
+---
+title: "User Guide"
+editor: visual
+author: Group 6
+execute: 
+  warning: false
+  message: false
+format: html
+---
+
+## Navigation
+
+This sidebar panel can be used to navigate within Illegal Fishing Analysis' R Shiny application.
+
+![](images/275611688311707_.pic.jpg)
+
+On the left sidebar panel, the user can navigate to the following tabs:
+
+-   Home tab which serves as the homepage
+
+-   General tab which contains five sub-tabs: By Fishtype, \# of shipment/Month, Shipment/month by fishtype, Value of Goods in Time, Weight vs Value of Goods.
+
+-   Network tab which contains two network graphs will showcase the interaction between entities.
+
+-   Anomaly tab which contains three sub-tabs: \# of Traderoutes, Value in Time and Weight vs Value Ratio will detect anomalies which may lead to illegal fishing between entities.
+
+## Home
+
+This tab gives an overview of what issue the project solves for R shiny application.
+
+![](images/275651688311745_.pic.jpg)
+
+## General
+
+There are five sub-sections for the General section. These sections contain visual analytics of identifying temporal patterns for individual entities and between entities in the knowledge graph created from trade records.
+
+### By Fishtype
+
+This tab shows the distribution of source nodes by fish type.
+
+![](images/275691688311785_.pic.jpg)
+
+1.  Start by selecting fish type from the drop-down list. Users can choose as many fish types as they want.
+
+2.  Then the bar chart will demonstrate the number of companies who engage in selected fish type trade. Comparison can be showed when multiple fish types are selected.
+
+### No. of Shipments per Month, 2028-2034
+
+This tab shows the number of shipments per month from 2028 to 2034.
+
+![](images/275731688311821_.pic.jpg)
+
+1.  Start by selecting month from the drop-down list. Users can choose as many months as they want.
+
+2.  Then the bar chart will demonstrate the number of shipments per month from 2028 to 2034. When the users hover their mouse over the graph it will display the number of shipments for specific year and month. Comparison can be showed when multiple months are selected.
+
+### Shipment/month by fishtype
+
+This tab shows the change in total shipments per month by fish type from 2028 to 2034.
+
+![](images/275771688311875_.pic.jpg)
+
+1.  Start by selecting fish type from the list. Users can select as many as fish types as they want.
+
+2.  Then the line chart will demonstrate the changes in total number of shipments from 2028 to 2034 for the selected fish type. When the users hover their mouse over the graph it will display the number of shipments of the fish type for specific year and month. Comparison can be showed when multiple fish types are selected.
+
+### Value of Goods in Time
+
+This tab shows the change in total value of goods from 2028 to 2034.
+
+![](images/275811688311903_.pic.jpg)
+
+1.  Start by selecting the year range from Time Range slider. The default range is from 2028-01 to 2034-12.
+
+2.  Then the line chart will demonstrate the changes in sum of value of goods from 2028-01 to 2034-12. When the users hover their mouse over the graph it will display the sum of value of goods for specific year and month. Sudden rise and fall in the value of goods can be detected from the trend of line.
+
+### Weight vs Value of Goods
+
+This tab explores the relationship between log value of weight and log value of goods from 2028 to 2034.
+
+![](images/275851688311934_.pic.jpg)
+
+1.  Start by selecting the year from drop-down list.
+
+2.  Then the graph will demonstrate the hexbin plot of weight vs value of goods in log scale.
+
+## Network
+
+### Shipment Network
+
+This tab explores the shipment network between the entities.
+
+![](images/275891688311964_.pic.jpg)
+
+![](images/275901688311975_.pic.jpg)
+
+1.  Start by selecting the year from the drop-down list and centrality percentile from the slider.
+
+2.  Then the graph will demonstrate the interaction in shipment between the entities.
+
+### Country Network
+
+This tab explores the network between countries.
+
+![](images/275941688312005_.pic.jpg)
+
+![](images/275951688312012_.pic.jpg)
+
+1.  Start by selecting time range, degree centrality percentile and weight percentile from the slider.
+
+2.  Then the graph will demonstrate the network in shipment between different countries.
+
+## Anomaly
+
+### Trend in Trade route Count from 2028 to 2034
+
+This tab shows the trend in number of trade routes by month in each year.
+
+![](images/276001688312117_.pic.jpg)
+
+1.  Start by selecting the year from the tick box. The year range covers 2028 to 2034. Users can choose multiple years at the same time.
+
+2.  Then the line chart will demonstrate the change in number of trade route of year selected. When users hover their mouse over the graph it will display the number of routes in specific month and year. Anomaly can be detected when there is a sudden rise or fall in the number of trade routes, indicating the companies not operating regular businesses.
+
+### 
+
+### Value in Time
+
+This tab shows the change in total value of goods from 2028-01 to 2034-12.
+
+![](images/276041688312193_.pic.jpg)
+
+1.  Start by selecting time range from Time Range Slider. The default range is from 2028-01 to 2034-12.
+
+2.  Then the line chart will demonstrate the change in total value of goods within the year range selected. Anomaly can be detected when there is a surge in total value of goods which is above threshold at a point in time.
+
+### 
+
+### Weight vs Value Ratio
+
+This tab shows the linear relationship between the value of goods (log scale) and weight (log scale).
+
+![](images/276081688312220_.pic.jpg)
+
+1.  Start by selecting the number of dots to be displayed on the graph.
+
+2.  Then the line chart will demonstrate the linear regression between the above two variables. When users hover their mouse over the graph the value of weights and goods will be displayed, along with the results of anomaly detection. Outliers are considered as anomaly in this graph. Black dots represent the top anomaly and blue dots represent moderate anomaly which are suspected of illegal fishing.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 

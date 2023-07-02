@@ -18,25 +18,26 @@ website:
         text: "Data Source"
       
       - icon: "display"
-        href: https://github.com/yangty54
+        href: https://yangty.shinyapps.io/VAA-ShinyAPP/
         text: "R Shiny Application"
       
       - icon: github
         href: https://github.com/yangty54/VAA-Project-G6
         text: "GitHub Repository"
     
+    style: "docked"
     search: true
     collapse-level: 1
     
     contents: 
       - text: Home
         href: index.qmd
-      - text: "Proposal"
-        href: "Proposal/Proposal.qmd"
+      - text: "Overview"
+        href: "Overview.qmd"
       - text: User Guide
-        href: 
+        href: "UserGuide.qmd"
       - text: Application
-        href: 
+        href: "Application.qmd"
       - text: Poster
         href:
 
@@ -45,7 +46,6 @@ format:
     theme: Journal
     css: styles.css
     toc: true
-    layout: _layout.html
     code-overflow: wrap
     page-layout: full
 

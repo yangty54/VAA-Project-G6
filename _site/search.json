@@ -1,5 +1,138 @@
 [
   {
+    "objectID": "UserGuide.html",
+    "href": "UserGuide.html",
+    "title": "User Guide",
+    "section": "",
+    "text": "This sidebar panel can be used to navigate within Illegal Fishing Analysis’ R Shiny application.\n\nOn the left sidebar panel, the user can navigate to the following tabs:\n\nHome tab which serves as the homepage\nGeneral tab which contains five sub-tabs: By Fishtype, # of shipment/Month, Shipment/month by fishtype, Value of Goods in Time, Weight vs Value of Goods.\nNetwork tab which contains two network graphs will showcase the interaction between entities.\nAnomaly tab which contains three sub-tabs: # of Traderoutes, Value in Time and Weight vs Value Ratio will detect anomalies which may lead to illegal fishing between entities."
+  },
+  {
+    "objectID": "UserGuide.html#navigation",
+    "href": "UserGuide.html#navigation",
+    "title": "User Guide",
+    "section": "",
+    "text": "This sidebar panel can be used to navigate within Illegal Fishing Analysis’ R Shiny application.\n\nOn the left sidebar panel, the user can navigate to the following tabs:\n\nHome tab which serves as the homepage\nGeneral tab which contains five sub-tabs: By Fishtype, # of shipment/Month, Shipment/month by fishtype, Value of Goods in Time, Weight vs Value of Goods.\nNetwork tab which contains two network graphs will showcase the interaction between entities.\nAnomaly tab which contains three sub-tabs: # of Traderoutes, Value in Time and Weight vs Value Ratio will detect anomalies which may lead to illegal fishing between entities."
+  },
+  {
+    "objectID": "UserGuide.html#home",
+    "href": "UserGuide.html#home",
+    "title": "User Guide",
+    "section": "Home",
+    "text": "Home\nThis tab gives an overview of what issue the project solves for R shiny application."
+  },
+  {
+    "objectID": "UserGuide.html#general",
+    "href": "UserGuide.html#general",
+    "title": "User Guide",
+    "section": "General",
+    "text": "General\nThere are five sub-sections for the General section. These sections contain visual analytics of identifying temporal patterns for individual entities and between entities in the knowledge graph created from trade records.\n\nBy Fishtype\nThis tab shows the distribution of source nodes by fish type.\n\n\nStart by selecting fish type from the drop-down list. Users can choose as many fish types as they want.\nThen the bar chart will demonstrate the number of companies who engage in selected fish type trade. Comparison can be showed when multiple fish types are selected.\n\n\n\nNo. of Shipments per Month, 2028-2034\nThis tab shows the number of shipments per month from 2028 to 2034.\n\n\nStart by selecting month from the drop-down list. Users can choose as many months as they want.\nThen the bar chart will demonstrate the number of shipments per month from 2028 to 2034. When the users hover their mouse over the graph it will display the number of shipments for specific year and month. Comparison can be showed when multiple months are selected.\n\n\n\nShipment/month by fishtype\nThis tab shows the change in total shipments per month by fish type from 2028 to 2034.\n\n\nStart by selecting fish type from the list. Users can select as many as fish types as they want.\nThen the line chart will demonstrate the changes in total number of shipments from 2028 to 2034 for the selected fish type. When the users hover their mouse over the graph it will display the number of shipments of the fish type for specific year and month. Comparison can be showed when multiple fish types are selected.\n\n\n\nValue of Goods in Time\nThis tab shows the change in total value of goods from 2028 to 2034.\n\n\nStart by selecting the year range from Time Range slider. The default range is from 2028-01 to 2034-12.\nThen the line chart will demonstrate the changes in sum of value of goods from 2028-01 to 2034-12. When the users hover their mouse over the graph it will display the sum of value of goods for specific year and month. Sudden rise and fall in the value of goods can be detected from the trend of line.\n\n\n\nWeight vs Value of Goods\nThis tab explores the relationship between log value of weight and log value of goods from 2028 to 2034.\n\n\nStart by selecting the year from drop-down list.\nThen the graph will demonstrate the hexbin plot of weight vs value of goods in log scale."
+  },
+  {
+    "objectID": "UserGuide.html#network",
+    "href": "UserGuide.html#network",
+    "title": "User Guide",
+    "section": "Network",
+    "text": "Network\n\nShipment Network\nThis tab explores the shipment network between the entities.\n\n\n\nStart by selecting the year from the drop-down list and centrality percentile from the slider.\nThen the graph will demonstrate the interaction in shipment between the entities.\n\n\n\nCountry Network\nThis tab explores the network between countries.\n\n\n\nStart by selecting time range, degree centrality percentile and weight percentile from the slider.\nThen the graph will demonstrate the network in shipment between different countries."
+  },
+  {
+    "objectID": "UserGuide.html#anomaly",
+    "href": "UserGuide.html#anomaly",
+    "title": "User Guide",
+    "section": "Anomaly",
+    "text": "Anomaly\n\nTrend in Trade route Count from 2028 to 2034\nThis tab shows the trend in number of trade routes by month in each year.\n\n\nStart by selecting the year from the tick box. The year range covers 2028 to 2034. Users can choose multiple years at the same time.\nThen the line chart will demonstrate the change in number of trade route of year selected. When users hover their mouse over the graph it will display the number of routes in specific month and year. Anomaly can be detected when there is a sudden rise or fall in the number of trade routes, indicating the companies not operating regular businesses.\n\n\n\n\n\n\nValue in Time\nThis tab shows the change in total value of goods from 2028-01 to 2034-12.\n\n\nStart by selecting time range from Time Range Slider. The default range is from 2028-01 to 2034-12.\nThen the line chart will demonstrate the change in total value of goods within the year range selected. Anomaly can be detected when there is a surge in total value of goods which is above threshold at a point in time.\n\n\n\n\n\n\nWeight vs Value Ratio\nThis tab shows the linear relationship between the value of goods (log scale) and weight (log scale).\n\n\nStart by selecting the number of dots to be displayed on the graph.\nThen the line chart will demonstrate the linear regression between the above two variables. When users hover their mouse over the graph the value of weights and goods will be displayed, along with the results of anomaly detection. Outliers are considered as anomaly in this graph. Black dots represent the top anomaly and blue dots represent moderate anomaly which are suspected of illegal fishing."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Application.html",
+    "href": "Application.html",
+    "title": "Application",
+    "section": "",
+    "text": "The Illegal Fishing Analysis application is available at: https://yangty.shinyapps.io/VAA-ShinyAPP-G6/\nProject GitHub Repository: https://github.com/yangty54\nData Source: https://github.com/vast-challenge/2023-data/raw/800887b8fcadad4ac526d29983948277a6e423e2/MC2.zip?raw=true"
+  },
+  {
+    "objectID": "Overview.html",
+    "href": "Overview.html",
+    "title": "Project Overview",
+    "section": "",
+    "text": "In this project, our team will design a web-enabled visual analytics platform using R Shiny application. Our purpose is to draw insightful conclusions from visualization of data we gathered and provide useful suggestions."
+  },
+  {
+    "objectID": "Overview.html#visualizing-demographics",
+    "href": "Overview.html#visualizing-demographics",
+    "title": "Project Overview",
+    "section": "Visualizing Demographics",
+    "text": "Visualizing Demographics\nBy evaluating and visualizing basic patterns and interactions among business entities over time using a visual analytics approach, we will seek to identify companies that have shut down due to illegal fishing but started to resume the illegal operations."
+  },
+  {
+    "objectID": "Overview.html#discovering-new-patterns-and-anomalies",
+    "href": "Overview.html#discovering-new-patterns-and-anomalies",
+    "title": "Project Overview",
+    "section": "Discovering New Patterns and Anomalies",
+    "text": "Discovering New Patterns and Anomalies\nBy integrating reliable links from the 12 groups of link suggestions into the knowledge graph, we need to identify new patterns and anomalies that may arise, indicating previously hidden connections or illegal fishing activities."
+  },
+  {
+    "objectID": "Overview.html#identifying-companies-engaged-in-illegal-fishing",
+    "href": "Overview.html#identifying-companies-engaged-in-illegal-fishing",
+    "title": "Project Overview",
+    "section": "Identifying Companies Engaged in Illegal Fishing",
+    "text": "Identifying Companies Engaged in Illegal Fishing\nUtilizing visualizations, we must identify companies exhibiting suspicious trade patterns and confidently conclude their involvement in illegal fishing."
+  },
+  {
+    "objectID": "Overview.html#package-used",
+    "href": "Overview.html#package-used",
+    "title": "Project Overview",
+    "section": "Package Used",
+    "text": "Package Used\nHere’s a brief overview of what each package does:\n\njsonlite: A robust and quick way to read/write JSON data in R.\ntidygraph: A tidy interface to graph manipulations and provides many algorithms for graph structure.\nleaflet: Create interactive web maps with the JavaScript ‘Leaflet’ library.\nvisNetwork: Used for network visualization using vis.js library.\ntidyverse: A set of packages that work in harmony because they share common data representations and API design.\nlubridate: Makes dealing with dates a little easier.\nigraph: Network analysis and visualization.\nplotly: Create interactive web graphics via ‘plotly.js’.\nggplot2: A system for ‘declaratively’ creating graphics.\ndplyr: A grammar of data manupulation.\nshiny: A web application framework for R.\nshiniydashboard: Create Dsahboards with ‘Shiny’.\nshinythemes: Themes for Shiny.\nshinydashboardPlus: Add more ‘AdminLTE2’ Components to ‘shinydashboard’.\nshinyWidgets: Custom input widgets for Shiny.\nshinybusy: Busy indicators and notifications for ‘Shiny’ applications.\nshinyjs: Easily improve the user experience of your shiny apps in seconds.\nreadxl: Read excel files.\nnetworkD3: D3 JavaScript network graphs from R.\nkableExtra: Construct complex table with ‘kable’ and pipe syntax.\nknitr: A general-popuse package for dynamic report generation in R.\nforcats: Tools for working with categorical variables (Factors)."
+  },
+  {
+    "objectID": "Overview.html#the-data",
+    "href": "Overview.html#the-data",
+    "title": "Project Overview",
+    "section": "The Data",
+    "text": "The Data\nNodes (34,576 rows, 3 columns):\n\nid: Identifier for each entity (in this case, the names of companies involved in fishing).\nshpcountry: Country from where the goods were shipped.\nrcvcountry: Country where the goods were received.\n\nEdges (5,464,378 rows, 7 columns):\n\nsource: Identifier of the entity (company) where the trade relationship originates.\ntarget: Identifier of the entity (company) where the trade relationship ends.\nhscode: The Harmonized System code, an international standard for classifying traded products.\narrivaldate: Date the goods arrived.\nvolumeteu: Volume of the goods in twenty-foot equivalent units.\nweightkg: Weight of the goods in kilograms.\nvalueofgoods_omu: Value of goods in Oceanus Monetary Units (OMU)."
+  },
+  {
+    "objectID": "Overview.html#handling-missing-data",
+    "href": "Overview.html#handling-missing-data",
+    "title": "Project Overview",
+    "section": "Handling Missing Data",
+    "text": "Handling Missing Data\nMissing data is a common issue in real-world datasets, and our datasets are no exception. Appropriate handling of missing data is crucial to avoid introducing bias or inaccuracies in our analysis.\nIn the Nodes dataset, we encounter missing values in the categorical variables shpcountry and rcvcountry. We choose to use Random Sampling Imputation to handle these missing values. This method involves taking random observations from the dataset and using these to replace the missing data. This technique assumes that the data are missing completely at random (MCAR).\nIn the Edges dataset, missing data appears in several variables. For these, we employ Multiple Imputation. Multiple Imputation is a more sophisticated technique that creates plausible imputed values for the missing data based on the relationships observed in the data. This method provides a better estimate when the data is not missing at random, and it takes into account the uncertainty about the missing data by creating multiple datasets and analyzing each one separately.\nThe rationale for these choices is to maximize the utilization of available data, and not to lose valuable information by just removing all the rows containing NA, which would drastically reduce our dataset size."
+  },
+  {
+    "objectID": "Overview.html#limitations-and-challenges",
+    "href": "Overview.html#limitations-and-challenges",
+    "title": "Project Overview",
+    "section": "Limitations and Challenges",
+    "text": "Limitations and Challenges\n\nData Completeness and Accuracy: The datasets provided have missing data, which we filled in using random sampling and multiple imputation techniques. While these techniques are a pragmatic approach to handling missing data, they can introduce bias or inaccuracies into the results. We must remain aware that the patterns and anomalies detected might not entirely represent the reality due to these potential inaccuracies.\nComplexity of Visual Analysis: While visual analytics provide a powerful means to identify patterns, outliers, and relationships, they can become complicated and less intuitive as the complexity of data increases. It may be challenging to design visualizations that effectively convey the complex relationships within the knowledge graph and trade data.\nScalability: The sheer volume of data and the high-dimensional nature of the data (multiple attributes per node) might pose challenges to computation and visualization. It could be a challenge to develop methods that scale efficiently to handle this volume of data while maintaining the clarity of the visualizations.\nEvaluation of Link Suggestions: Evaluating the reliability of the suggested links for the knowledge graph requires the comparison of different scenarios, each with different sets of links added. This could become computationally demanding and may also lead to a combinatorial explosion of scenarios to evaluate.\nTemporal Pattern Identification: Tracking companies’ activities over time to detect whether they are resuming illegal fishing operations under different names is challenging, as it involves not only recognizing patterns but also making connections across different entities and timescales.\nInterpretation of Results: The results and visualizations need to be interpreted correctly to draw meaningful conclusions. There is always a risk of drawing false or misleading conclusions from the visualizations if not interpreted within the context of the data.\n\nDespite these challenges, we believe our methodological approach will allow us to gain valuable insights and make significant progress towards identifying companies possibly engaged in IUU fishing."
+  },
+  {
+    "objectID": "Overview.html#project-timeline",
+    "href": "Overview.html#project-timeline",
+    "title": "Project Overview",
+    "section": "Project Timeline",
+    "text": "Project Timeline\n\nProject Initiation: Present date till 28th May 2023\n\nIn this phase, we will delve deeper into understanding the problem, defining our objectives, and planning our strategy. This will also involve preparing the initial project proposal using Quarto and publishing the project website. We will aim to submit our project proposal on eLearn by 28th May 2023.\n\nProject Execution and Completion: 29th May 2023 to 2nd July 2023\n\nDuring this phase, we will carry out the planned work. This includes data preprocessing, analysis, and visualization, along with the integration of various analytical techniques and tools. Concurrently, we will regularly update our project website with the progress and key milestones achieved.\nWe will also create the final application, user guide, and project poster. By the end of this phase, the project website will be fully updated with all details including the final application, user guide, and poster. The deadline for completing this phase is 2nd July 2023.\n\nTeam Meetings:\n\nJune 3rd, 2023: The team will meet to discuss the project proposal, brainstorm ideas, and outline the key components and approach for the project.\nJune 9th, 2023: In this meeting, the team will dive into the project details, finalize the proposal, and solidify the methodology, visualization tools, and analytical techniques to be used.\nJune 17th, 2023: The team will focus on working with visualization tools and methods in detail. This meeting will involve exploring different visualizations, selecting the most suitable ones, and refining the visual analytics approach.\nJune 24th, 2023: This meeting will mark the finalization of the project, including a review of all deliverables, refining any remaining details, and preparing for the final submission and demo.\n\nVirtual Team Meetings: Throughout the project timeline, the team will also schedule regular virtual meetings on Teams to discuss project-related questions, concerns, and progress updates. These virtual meetings will facilitate ongoing communication and collaboration, ensuring that everyone is aligned and on track."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Visual Analytics for Identifying Illegal Fishing",
+    "section": "",
+    "text": "The global issue of illegal, unreported, and unregulated (IUU) fishing poses a significant threat to marine ecosystems and sustainable fishing practices. Through this project, we aim to leverage visual analytics techniques to analyze trade data and identify companies engaged in illegal fishing. By providing comprehensive insights and tools to detect patterns, anomalies, and business relationships, we can shed light to take effective measures against IUU fishing and protect marine species."
+  },
+  {
+    "objectID": "index.html#sample-interactive-map-of-fishing-zones",
+    "href": "index.html#sample-interactive-map-of-fishing-zones",
+    "title": "Visual Analytics for Identifying Illegal Fishing",
+    "section": "Sample Interactive Map of Fishing Zones",
+    "text": "Sample Interactive Map of Fishing Zones"
+  },
+  {
     "objectID": "Proposal/Proposal.html",
     "href": "Proposal/Proposal.html",
     "title": "Project Proposal",
@@ -61,26 +194,5 @@
     "title": "Project Proposal",
     "section": "Project Timeline",
     "text": "Project Timeline\n\nProject Initiation: Present date till 28th May 2023\n\nIn this phase, we will delve deeper into understanding the problem, defining our objectives, and planning our strategy. This will also involve preparing the initial project proposal using Quarto and publishing the project website. We will aim to submit our project proposal on eLearn by 28th May 2023.\n\nProject Execution and Completion: 29th May 2023 to 2nd July 2023\n\nDuring this phase, we will carry out the planned work. This includes data preprocessing, analysis, and visualization, along with the integration of various analytical techniques and tools. Concurrently, we will regularly update our project website with the progress and key milestones achieved.\nWe will also create the final application, user guide, and project poster. By the end of this phase, the project website will be fully updated with all details including the final application, user guide, and poster. The deadline for completing this phase is 2nd July 2023.\n\nTeam Meetings:\n\nJune 3rd, 2023: The team will meet to discuss the project proposal, brainstorm ideas, and outline the key components and approach for the project.\nJune 9th, 2023: In this meeting, the team will dive into the project details, finalize the proposal, and solidify the methodology, visualization tools, and analytical techniques to be used.\nJune 17th, 2023: The team will focus on working with visualization tools and methods in detail. This meeting will involve exploring different visualizations, selecting the most suitable ones, and refining the visual analytics approach.\nJune 24th, 2023: This meeting will mark the finalization of the project, including a review of all deliverables, refining any remaining details, and preparing for the final submission and demo.\n\nVirtual Team Meetings: Throughout the project timeline, the team will also schedule regular virtual meetings on Teams to discuss project-related questions, concerns, and progress updates. These virtual meetings will facilitate ongoing communication and collaboration, ensuring that everyone is aligned and on track."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Visual Analytics for Identifying Illegal Fishing",
-    "section": "",
-    "text": "The global issue of illegal, unreported, and unregulated (IUU) fishing poses a significant threat to marine ecosystems and sustainable fishing practices. Through this project, we aim to leverage visual analytics techniques to analyze trade data and identify companies engaged in illegal fishing. By providing comprehensive insights and tools to detect patterns, anomalies, and business relationships, we can shed light to take effective measures against IUU fishing and protect marine species."
-  },
-  {
-    "objectID": "index.html#sample-interactive-map-of-fishing-zones",
-    "href": "index.html#sample-interactive-map-of-fishing-zones",
-    "title": "Visual Analytics for Identifying Illegal Fishing",
-    "section": "Sample Interactive Map of Fishing Zones",
-    "text": "Sample Interactive Map of Fishing Zones"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]

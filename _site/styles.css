@@ -1,25 +1,19 @@
-/* styles.css */
+/* CSS styles */
 
-/* Navbar styles */
-.navbar {
-  background-color: #333;
-  color: #fff;
+/* Adjust sidebar width and positioning */
+.sidebar {
+  width: 200px; /* Adjust the width as needed */
+  /* Add any additional styles to position the sidebar */
 }
 
-.navbar a {
-  color: #fff;
+/* Increase main panel width */
+.main-panel {
+  width: calc(100% - 200px); /* Adjust the width based on the sidebar width */
+  /* Add any additional styles to control the space */
 }
 
-.navbar a:hover {
-  color: #f00;
+/* Adjust font size and weight for active table of contents */
+$toc-active {
+  font-size: 18px; /* Modify the font size as desired */
+  font-weight: bold;
 }
-
-/* Main container styles */
-.container {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: #f0f0f0;
-}
-
-/* Additional styles */
-/* Add your own custom CSS styles here */
