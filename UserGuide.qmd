@@ -92,7 +92,7 @@ This tab explores the shipment network between the entities.
 
 This tab explores the network between countries.
 
-![](images/截屏2023-07-04 下午9.20.00.png)
+![](images/截屏2023-07-04%20下午9.20.00.png)
 
 ![](images/275951688312012_.pic.jpg)
 

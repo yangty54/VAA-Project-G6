@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Overview.html">Overview</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Overview.html"> Project Overview</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -106,30 +106,33 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Home</span></a>
+ <span class="menu-text"> Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Overview.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Overview</span></a>
+ <span class="menu-text"> Project Overview</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./UserGuide.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">User Guide</span></a>
+ <span class="menu-text"> User Guide</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Application.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Application</span></a>
+ <span class="menu-text"> Application</span></a>
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text">Poster</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="./poster.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"> Poster</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -297,10 +300,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="handling-missing-data" class="level2">
 <h2 class="anchored" data-anchor-id="handling-missing-data"><strong>Handling Missing Data</strong></h2>
-<p>Missing data is a common issue in real-world datasets, and our datasets are no exception. Appropriate handling of missing data is crucial to avoid introducing bias or inaccuracies in our analysis.</p>
-<p>In the <strong>Nodes</strong> dataset, we encounter missing values in the categorical variables <strong><code>shpcountry</code></strong> and <strong><code>rcvcountry</code></strong>. We choose to use <strong>Random Sampling Imputation</strong> to handle these missing values. This method involves taking random observations from the dataset and using these to replace the missing data. This technique assumes that the data are missing completely at random (MCAR).</p>
-<p>In the <strong>Edges</strong> dataset, missing data appears in several variables. For these, we employ <strong>Multiple Imputation</strong>. Multiple Imputation is a more sophisticated technique that creates plausible imputed values for the missing data based on the relationships observed in the data. This method provides a better estimate when the data is not missing at random, and it takes into account the uncertainty about the missing data by creating multiple datasets and analyzing each one separately.</p>
-<p>The rationale for these choices is to maximize the utilization of available data, and not to lose valuable information by just removing all the rows containing NA, which would drastically reduce our dataset size.</p>
+<p>Missing data is a common issue encountered in real-world datasets, and it is essential to handle it appropriately to ensure accurate analysis. In our datasets, both the Nodes and Edges datasets contain missing values that require attention.</p>
+<p>In the Nodes dataset, we have identified missing values in the categorical variables “shpcountry” and “rcvcountry.” To address these missing values, we have chosen to use a method called Complete Case Analysis. This method involves removing any rows that contain missing values in the variables of interest. By doing so, we retain only the complete cases where all necessary information is available. This approach assumes that the missing data is missing completely at random (MCAR).</p>
+<p>Moving to the Edges dataset, we have observed missing data in multiple variables. To handle these missing values, we have employed another method called Listwise Deletion. This method involves removing any rows that contain missing values in any of the variables. By doing so, we retain only the complete cases in the dataset. However, it is important to note that this approach can result in a reduction of the dataset size if a significant number of rows contain missing values.</p>
+<p>Additionally, considering the limitations of the Shiny app in handling large datasets, we have made the decision to trim down the data size to 50,000 observations. This reduction in the dataset size allows for smoother performance and faster rendering of visualizations within the Shiny app. However, it is important to note that this downsizing may result in a loss of some data granularity and potentially affect the representativeness of the analysis. It is advisable to consider the trade-off between computational constraints and the need for comprehensive data analysis when working with large datasets in interactive applications like Shiny.</p>
 </section>
 <section id="limitations-and-challenges" class="level2">
 <h2 class="anchored" data-anchor-id="limitations-and-challenges">Limitations and Challenges</h2>

@@ -158,13 +158,13 @@ Here's a brief overview of what each package does:
 
 ## **Handling Missing Data**
 
-Missing data is a common issue in real-world datasets, and our datasets are no exception. Appropriate handling of missing data is crucial to avoid introducing bias or inaccuracies in our analysis.
+Missing data is a common issue encountered in real-world datasets, and it is essential to handle it appropriately to ensure accurate analysis. In our datasets, both the Nodes and Edges datasets contain missing values that require attention.
 
-In the **Nodes** dataset, we encounter missing values in the categorical variables **`shpcountry`** and **`rcvcountry`**. We choose to use **Random Sampling Imputation** to handle these missing values. This method involves taking random observations from the dataset and using these to replace the missing data. This technique assumes that the data are missing completely at random (MCAR).
+In the Nodes dataset, we have identified missing values in the categorical variables "shpcountry" and "rcvcountry." To address these missing values, we have chosen to use a method called Complete Case Analysis. This method involves removing any rows that contain missing values in the variables of interest. By doing so, we retain only the complete cases where all necessary information is available. This approach assumes that the missing data is missing completely at random (MCAR).
 
-In the **Edges** dataset, missing data appears in several variables. For these, we employ **Multiple Imputation**. Multiple Imputation is a more sophisticated technique that creates plausible imputed values for the missing data based on the relationships observed in the data. This method provides a better estimate when the data is not missing at random, and it takes into account the uncertainty about the missing data by creating multiple datasets and analyzing each one separately.
+Moving to the Edges dataset, we have observed missing data in multiple variables. To handle these missing values, we have employed another method called Listwise Deletion. This method involves removing any rows that contain missing values in any of the variables. By doing so, we retain only the complete cases in the dataset. However, it is important to note that this approach can result in a reduction of the dataset size if a significant number of rows contain missing values.
 
-The rationale for these choices is to maximize the utilization of available data, and not to lose valuable information by just removing all the rows containing NA, which would drastically reduce our dataset size.
+Additionally, considering the limitations of the Shiny app in handling large datasets, we have made the decision to trim down the data size to 50,000 observations. This reduction in the dataset size allows for smoother performance and faster rendering of visualizations within the Shiny app. However, it is important to note that this downsizing may result in a loss of some data granularity and potentially affect the representativeness of the analysis. It is advisable to consider the trade-off between computational constraints and the need for comprehensive data analysis when working with large datasets in interactive applications like Shiny.
 
 ## Limitations and Challenges
 

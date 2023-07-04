@@ -1,0 +1,1 @@
+Sitemap: https://vaa-project-g6.netlify.app/sitemap.xml

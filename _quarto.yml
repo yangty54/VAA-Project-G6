@@ -4,6 +4,8 @@ project:
 website:
   page-navigation: false
   title: "VAA-Project-G6"
+  site-url: "https://vaa-project-g6.netlify.app/"
+  repo-url: "https://github.com/yangty54/VAA-Project-G6"
   
   page-footer:
     right: "ISSS608 VAA Project"
@@ -30,16 +32,16 @@ website:
     collapse-level: 1
     
     contents: 
-      - text: Home
+      - text: "{{< bi house-fill >}} Home"
         href: index.qmd
-      - text: "Overview"
+      - text: "{{< bi text-paragraph >}} Project Overview"
         href: "Overview.qmd"
-      - text: User Guide
+      - text: "{{< bi file-earmark-richtext-fill >}} User Guide"
         href: "UserGuide.qmd"
-      - text: Application
+      - text: "{{< bi window-sidebar >}} Application"
         href: "Application.qmd"
-      - text: Poster
-        href:
+      - text: "{{< bi easel >}} Poster"
+        href: "poster.qmd"
 
 format:
   html:
