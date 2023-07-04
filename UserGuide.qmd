@@ -44,16 +44,6 @@ This tab shows the distribution of source nodes by fish type.
 
 2.  Then the bar chart will demonstrate the number of companies who engage in selected fish type trade. Comparison can be showed when multiple fish types are selected.
 
-### No. of Shipments per Month, 2028-2034
-
-This tab shows the number of shipments per month from 2028 to 2034.
-
-![](images/275731688311821_.pic.jpg)
-
-1.  Start by selecting month from the drop-down list. Users can choose as many months as they want.
-
-2.  Then the bar chart will demonstrate the number of shipments per month from 2028 to 2034. When the users hover their mouse over the graph it will display the number of shipments for specific year and month. Comparison can be showed when multiple months are selected.
-
 ### Shipment/month by fishtype
 
 This tab shows the change in total shipments per month by fish type from 2028 to 2034.
@@ -102,11 +92,11 @@ This tab explores the shipment network between the entities.
 
 This tab explores the network between countries.
 
-![](images/275941688312005_.pic.jpg)
+![](images/截屏2023-07-04 下午9.20.00.png)
 
 ![](images/275951688312012_.pic.jpg)
 
-1.  Start by selecting time range, degree centrality percentile and weight percentile from the slider.
+1.  Start by selecting time range from the slider.
 
 2.  Then the graph will demonstrate the network in shipment between different countries.
 

@@ -1,0 +1,220 @@
+---
+title: "Project Proposal"
+subtitle: "Visual Analytics for Identifying Illegal Fishing"
+editor: visual
+author: Group 6
+execute: 
+  warning: false
+  message: false
+format: html
+layout: _layout.html
+---
+
+# 1. Overview
+
+In this project, our team will design a web-enabled visual analytics platform
+using R Shiny application. Our purpose is to draw insightful conclusions from
+visualization of data we gathered and provide useful suggestions.
+
+# 2. Project Topic
+
+Seafood is one of the most widely traded commodities in the global food market. About
+520 million people make their living on fishing and fishing-related activities.
+However, unreported, and unregulated (IUU) fishing activities become more
+common which result in damage to marine ecosystem and pose a threat to food
+security in coastal communities.
+
+We received import/export data for Oceanus\'s marine and fishing industries. As the
+data is incomplete, trade data needs to be translated into a knowledge graph
+for further analysis. We will do visualizations which provide more detailed
+patterns for entities in the knowledge graph. The visualization analytics will
+evaluate the patterns and interactions among business entities over time,
+discover new patterns and anomalies indicating previous illegal fishing
+activities, identify companies which engage in IUU fishing and provide
+suggestions on actionable measures.
+
+# 3. Motivation:
+
+The global issue of illegal, unreported, and unregulated (IUU) fishing poses a significant threat to marine ecosystems and sustainable fishing practices. Through this project, we aim to leverage visual analytics techniques to analyze trade data and identify companies engaged in illegal fishing. By providing comprehensive insights and tools to detect patterns, anomalies, and business relationships, we can shed light to take effective measures against IUU fishing and protect marine species. 
+
+# 4. Problem Statement
+
+The main challenges addressed by this project are:
+
+## Visualizing Demographics
+
+By evaluating and visualizing basic patterns and interactions among business entities over time using a visual analytics approach, we will seek to identify companies that have shut down due to illegal fishing but started to resume the illegal operations.
+
+## Discovering New Patterns and Anomalies
+
+By integrating reliable links from the 12 groups of link suggestions into the knowledge graph, we need to identify new patterns and anomalies that may arise, indicating previously hidden connections or illegal fishing activities.
+
+## Identifying Companies Engaged in Illegal Fishing
+
+Utilizing visualizations, we must identify companies exhibiting suspicious trade patterns and confidently conclude their involvement in illegal fishing.
+
+# 5. Methodology:
+
+Our approach to solving the aforementioned problems consists of the following steps:
+
+1.  **Data Preprocessing**: Before any analysis, we'll clean the data, handle missing values, and prepare it for the subsequent steps.
+
+2.  **Exploratory Data Analysis (EDA)**: In this stage, we will conduct a preliminary investigation of the data to better understand its structure, uncover any interesting relationships, and identify any patterns or anomalies.
+
+3.  **Visual Analytics**: We will employ various visualization tools to illustrate temporal patterns and interactions between entities in the knowledge graph and use centrality measurements to discover the magnitude of interactions between entities.We will use graphs, charts, and network diagrams to present the data visually, aiming to identify trends and irregularities indicative of illegal activities.
+
+4.  **Network Evaluation and Integration**: We will evaluate and integrate the suggested networks into the knowledge graph. The integration of these networks may reveal new patterns and connections that could suggest IUU fishing activities.
+
+5.  **Pattern Recognition and Anomaly Detection**: This stage involves the identification of entities that fit patterns consistent with illegal fishing activities. It also includes the detection of outliers or anomalies that could signify unreported or irregular activities.
+
+# 6. **Evaluation Metrics**
+
+Our evaluation of this project will be based on both qualitative and quantitative metrics, keeping in mind the impact of data imputation and random sampling on our results:
+
+1.  **Effectiveness of Visualizations**: We'll use a variety of visualizations including violin plots, time series graphs, scatterplot matrices, word clouds, treemaps, network graphs, histograms, boxplots and etc. The effectiveness of these visualizations in clearly communicating the findings, trends, and insights will be a key evaluation metric.
+
+2.  **Accuracy of Pattern Identification**: This metric assesses how accurately our visual analytics approach can identify and categorize temporal patterns and business relationships. Given the imputation of data, we'll also consider the degree of uncertainty in our pattern identifications.
+
+3.  **Reliability of Network Suggestions**: We'll evaluate the reliability of the suggested links based on their coherence with the existing graph and their ability to unveil potential illegal activities. Again, we need to keep in mind that some of this data has been imputed.
+
+4.  **Success in Anomaly Detection**: Our success rate in identifying new patterns or anomalies upon integrating the reliable links will be evaluated, while considering the effect of data imputation and random sampling.
+
+5.  **Precision in Identifying Companies**: We'll evaluate how accurately we can identify companies involved in IUU fishing based on our visualizations and pattern detection. We'll also consider the uncertainty introduced by the use of imputed data in our conclusions.
+
+6.  **Insightfulness of the Visualizations**: The quality, clarity, and insightfulness of the visualizations will be key measures of our project's success, bearing in mind the uncertainties due to data imputation.
+
+# 7. **Tentative Visualizations to Use in Project**
+
+Through various types of visualization including scatterplots, time-series plots, histograms, and network graphs, we will unearth interesting patterns and trends in the data that can aid in the evaluation of the sets of predicted knowledge graph links.
+
+We will use time-series plot to show temporal trends and patterns in the goods shipment data, providing us with insights into the frequency and volume of trade between companies over the years. Scatterplots, particularly when variables are transformed via logarithmic scaling, allow us to detect strong relationships between variables like weight and volume of goods, which can indicate the nature and perhaps reliability of the links.
+
+Network graphs reveal the relationships between shipping and receiving countries, and when combined with community detection methods, can help identify clusters or communities within the graph. This can indicate the reliability of the links as strong clusters might suggest well-established and therefore reliable trade links.
+
+Histograms and boxplots provide insights into the distribution of various continuous variables, which can indirectly affect the reliability of the links. For example, links associated with unusually high or low volumes of goods might be less reliable than those within the normal range.
+
+While all of these visualizations provide valuable insights, it's important to interpret them together and in the context of our knowledge about the data and its domain. The "most reliable" sets for completing the graph would ideally be those that are consistently supported across multiple visualizations and align with our existing knowledge about the trade network**.**
+
+## Package Used
+
+Here's a brief overview of what each package does:
+
+1.  jsonlite: A robust and quick way to read/write JSON data in R.
+
+2.  tidygraph: A tidy interface to graph manipulations and provides many algorithms for graph structure.
+
+3.  leaflet: Create interactive web maps with the JavaScript 'Leaflet' library.
+
+4.  visNetwork: Used for network visualization using vis.js library.
+
+5.  tidyverse: A set of packages that work in harmony because they share common data representations and API design.
+
+6.  lubridate: Makes dealing with dates a little easier.
+
+7.  igraph: Network analysis and visualization.
+
+8.  plotly: Create interactive web graphics via 'plotly.js'.
+
+9.  ggplot2: A system for 'declaratively' creating graphics.
+
+10. dplyr: A grammar of data manupulation.
+
+11. shiny: A web application framework for R.
+
+12. shiniydashboard: Create Dsahboards with 'Shiny'.
+
+13. shinythemes: Themes for Shiny.
+
+14. shinydashboardPlus: Add more 'AdminLTE2' Components to 'shinydashboard'.
+
+15. shinyWidgets: Custom input widgets for Shiny.
+
+16. shinybusy: Busy indicators and notifications for 'Shiny' applications.
+
+17. shinyjs: Easily improve the user experience of your shiny apps in seconds.
+
+18. readxl: Read excel files.
+
+19. networkD3: D3 JavaScript network graphs from R.
+
+20. kableExtra: Construct complex table with 'kable' and pipe syntax.
+
+21. knitr: A general-popuse package for dynamic report generation in R.
+
+22. forcats: Tools for working with categorical variables (Factors).
+
+## The Data
+
+**Nodes** (34,576 rows, 3 columns):
+
+-   **`id`**: Identifier for each entity (in this case, the names of companies involved in fishing).
+
+-   **`shpcountry`**: Country from where the goods were shipped.
+
+-   **`rcvcountry`**: Country where the goods were received.
+
+**Edges** (5,464,378 rows, 7 columns):
+
+-   **`source`**: Identifier of the entity (company) where the trade relationship originates.
+
+-   **`target`**: Identifier of the entity (company) where the trade relationship ends.
+
+-   **`hscode`**: The Harmonized System code, an international standard for classifying traded products.
+
+-   **`arrivaldate`**: Date the goods arrived.
+
+-   **`volumeteu`**: Volume of the goods in twenty-foot equivalent units.
+
+-   **`weightkg`**: Weight of the goods in kilograms.
+
+-   **`valueofgoods_omu`**: Value of goods in Oceanus Monetary Units (OMU).
+
+## **Handling Missing Data**
+
+Missing data is a common issue in real-world datasets, and our datasets are no exception. Appropriate handling of missing data is crucial to avoid introducing bias or inaccuracies in our analysis.
+
+In the **Nodes** dataset, we encounter missing values in the categorical variables **`shpcountry`** and **`rcvcountry`**. We choose to use **Random Sampling Imputation** to handle these missing values. This method involves taking random observations from the dataset and using these to replace the missing data. This technique assumes that the data are missing completely at random (MCAR).
+
+In the **Edges** dataset, missing data appears in several variables. For these, we employ **Multiple Imputation**. Multiple Imputation is a more sophisticated technique that creates plausible imputed values for the missing data based on the relationships observed in the data. This method provides a better estimate when the data is not missing at random, and it takes into account the uncertainty about the missing data by creating multiple datasets and analyzing each one separately.
+
+The rationale for these choices is to maximize the utilization of available data, and not to lose valuable information by just removing all the rows containing NA, which would drastically reduce our dataset size.
+
+## Limitations and Challenges
+
+1.  **Data Completeness and Accuracy**: The datasets provided have missing data, which we filled in using random sampling and multiple imputation techniques. While these techniques are a pragmatic approach to handling missing data, they can introduce bias or inaccuracies into the results. We must remain aware that the patterns and anomalies detected might not entirely represent the reality due to these potential inaccuracies.
+
+2.  **Complexity of Visual Analysis**: While visual analytics provide a powerful means to identify patterns, outliers, and relationships, they can become complicated and less intuitive as the complexity of data increases. It may be challenging to design visualizations that effectively convey the complex relationships within the knowledge graph and trade data.
+
+3.  **Scalability**: The sheer volume of data and the high-dimensional nature of the data (multiple attributes per node) might pose challenges to computation and visualization. It could be a challenge to develop methods that scale efficiently to handle this volume of data while maintaining the clarity of the visualizations.
+
+4.  **Evaluation of Link Suggestions**: Evaluating the reliability of the suggested links for the knowledge graph requires the comparison of different scenarios, each with different sets of links added. This could become computationally demanding and may also lead to a combinatorial explosion of scenarios to evaluate.
+
+5.  **Temporal Pattern Identification**: Tracking companies' activities over time to detect whether they are resuming illegal fishing operations under different names is challenging, as it involves not only recognizing patterns but also making connections across different entities and timescales.
+
+6.  **Interpretation of Results**: The results and visualizations need to be interpreted correctly to draw meaningful conclusions. There is always a risk of drawing false or misleading conclusions from the visualizations if not interpreted within the context of the data.
+
+Despite these challenges, we believe our methodological approach will allow us to gain valuable insights and make significant progress towards identifying companies possibly engaged in IUU fishing.
+
+## Project Timeline
+
+-   **Project Initiation**: Present date till 28th May 2023
+
+    -   In this phase, we will delve deeper into understanding the problem, defining our objectives, and planning our strategy. This will also involve preparing the initial project proposal using Quarto and publishing the project website. We will aim to submit our project proposal on eLearn by 28th May 2023.
+
+-   **Project Execution and Completion**: 29th May 2023 to 2nd July 2023
+
+    -   During this phase, we will carry out the planned work. This includes data preprocessing, analysis, and visualization, along with the integration of various analytical techniques and tools. Concurrently, we will regularly update our project website with the progress and key milestones achieved.
+
+    -   We will also create the final application, user guide, and project poster. By the end of this phase, the project website will be fully updated with all details including the final application, user guide, and poster. The deadline for completing this phase is 2nd July 2023.
+
+-   **Team Meetings**:
+
+    -   June 3rd, 2023: The team will meet to discuss the project proposal, brainstorm ideas, and outline the key components and approach for the project.
+
+    -   June 9th, 2023: In this meeting, the team will dive into the project details, finalize the proposal, and solidify the methodology, visualization tools, and analytical techniques to be used.
+
+    -   June 17th, 2023: The team will focus on working with visualization tools and methods in detail. This meeting will involve exploring different visualizations, selecting the most suitable ones, and refining the visual analytics approach.
+
+    -   June 24th, 2023: This meeting will mark the finalization of the project, including a review of all deliverables, refining any remaining details, and preparing for the final submission and demo.
+
+-   **Virtual Team Meetings**: Throughout the project timeline, the team will also schedule regular virtual meetings on Teams to discuss project-related questions, concerns, and progress updates. These virtual meetings will facilitate ongoing communication and collaboration, ensuring that everyone is aligned and on track.
